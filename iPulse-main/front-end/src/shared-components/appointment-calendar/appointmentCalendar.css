@@ -1,0 +1,21 @@
+.appointment-calendar-container {
+    width: 100%;
+    height: 520px;
+
+    padding: 10px;
+}
+
+.calendar-appointment-view {
+    max-width: none;
+    width: 80%;
+}
+
+.calendar-appointment-view-body {
+    background-color: #fefefe;
+}
+
+@media (max-width: 800px) {
+    .calendar-appointment-view {
+        width: 96%;
+    }
+}

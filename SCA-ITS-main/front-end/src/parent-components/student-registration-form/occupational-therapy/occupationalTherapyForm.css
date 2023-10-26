@@ -1,0 +1,30 @@
+.occupational-therapy-form {
+    text-align: center;
+}
+
+.therapy-doc-details {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.therapy-doc-details p {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.therapy-doc-details {
+    text-align: center;
+}
+
+@media(max-width: 800px) {
+    .therapy-doc-details {
+        width: 90%;
+    }
+
+}

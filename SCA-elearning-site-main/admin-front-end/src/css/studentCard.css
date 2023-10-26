@@ -1,0 +1,228 @@
+#student-card-container{
+    width: 80%;
+    height: fit-content;
+    min-height: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid white;
+}
+
+#student-card-info-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    width: 100%;
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    color: white;
+}
+
+#student-card-info-container:hover{
+    cursor: pointer;
+}
+
+#student-card-info-container:hover #student-card-info-name{
+    color: lightcyan;
+    text-decoration: underline;
+}
+
+#student-card-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 65%;
+    height: fit-content;
+    min-height: 10vh;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    background-color: #232F34;
+
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+#student-card-remove-student-button{
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+
+    color: white;
+    background-color: #BB0000;
+
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#student-card-update-student-button{
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+
+    color: white;
+    background-color: #344045;
+
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#student-card-update-student-button:hover{
+    cursor: pointer;
+    background-color: #566267;
+}
+
+#student-card-remove-student-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#student-card-add-course{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 50%;
+    height: 5%;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    color: white;
+    background-color: #232F34;
+
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+#student-card-add-course-button{
+    width: 20%;
+    font-family: sans-serif;
+}
+
+#student-card-courses-taken-title{
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+}
+
+#student-card-courses-taken-container{
+    display: grid;
+
+    grid-template-columns: 80% 1fr;
+
+    align-items: center;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#student-card-courses-taken-remove{
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+    height: 50%;
+
+    color: white;
+    background-color: #BB0000;
+
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+#student-card-courses-taken-remove:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+@media (max-width: 960px){
+    #student-card-container{
+        width: 97%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #student-card-info-container{
+        grid-template-columns: 20vw 30vw 30vw 20vw 20vw 40vw;
+        overflow-x: auto;
+    }
+    #student-card-buttons-container{
+        width: 85%;
+    }
+    #student-card-remove-student-button{
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #student-card-update-student-button{
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #student-card-add-course{
+        width: 85%;
+    }
+    #student-card-courses-taken-container{
+        grid-template-columns: 85% 1fr;
+    }
+    #student-card-courses-taken-remove{
+        width: 90%;
+        font-size: x-small;
+        border-radius: 10px;
+        height: 5vh;
+    }
+}
+
+

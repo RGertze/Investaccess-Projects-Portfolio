@@ -1,0 +1,223 @@
+body {}
+
+.App {
+  position: relative;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  height: fit-content;
+  padding-bottom: 125px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.hor-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vert-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+/* text wrapping */
+.wrap-text {
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.calendar-container {
+  width: 80%;
+}
+
+.calendar-container-header {
+  width: 80%;
+  padding: 15px;
+  font-family: sans-serif;
+}
+
+.calendar-container-header h2 {
+  text-decoration: underline;
+}
+
+/* SIZE */
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.full-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.m-left-30 {
+  margin-left: 30px;
+}
+
+.hover:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.prg-bar {
+  padding: 10px;
+}
+
+.thin-scrollbar::-webkit-scrollbar {
+  width: 1px;
+}
+
+/*  #.  2 col table 50-50*/
+.col-2-50 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  #.  2 col table 70-30*/
+.col-2-70 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  #.  2 col table 30-70*/
+.col-2-30 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ICON SIZES */
+.lock-med {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-lg {
+  width: 100px;
+  height: 100px;
+}
+
+.icon-m {
+  width: 50px;
+  height: 50px;
+}
+
+.icon-sm {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-x-sm {
+  width: 15px;
+  height: 15px;
+}
+
+/* COLORS */
+.btn-reject {
+  color: #ee4035;
+}
+
+.btn-approve {
+  color: #7bc043;
+}
+
+.btn-link {
+  color: #4035ee;
+}
+
+.seen {
+  color: #aaaaaa;
+}
+
+.unseen {
+  color: #77cccc;
+}
+
+.nothing {
+  color: #555;
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.no-pad-marg {
+  margin: 0;
+  padding: 0;
+}
+
+/* sweet alert z-index */
+.swal2-container {
+  z-index: 2000000 !important;
+}
+
+@media(max-width: 800px) {
+  .calendar-container-header {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .calendar-container {
+    width: 90%;
+  }
+}

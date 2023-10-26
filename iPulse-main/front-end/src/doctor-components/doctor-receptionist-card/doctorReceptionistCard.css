@@ -1,0 +1,27 @@
+.doctor-receptionist-card {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.doctor-receptionist-card img {
+    width: 120px;
+    height: 120px;
+}
+
+.doctor-receptionist-card .icons-container {
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.doctor-receptionist-card h5 {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.doctor-receptionist-card p {
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {}

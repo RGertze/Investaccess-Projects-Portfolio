@@ -1,0 +1,15 @@
+.doctor-profile-tab {
+    padding: 20px 10px 10px 10px;
+}
+
+.doctor-reviews-tab {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+    .doctor-reviews-tab {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+}

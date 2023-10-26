@@ -1,0 +1,98 @@
+.messaging-container {
+    display: grid;
+    grid-template-rows: 60px 1fr 100px;
+    row-gap: 5px;
+}
+
+.messaging-header {
+    display: grid;
+    grid-template-columns: 50px 70px 1fr;
+    align-items: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.messaging-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.messaging-header h5 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.messaging-content {
+    grid-row: 2;
+    height: 100%;
+    border: 1px solid #dddddd;
+
+
+    padding-top: 20px;
+    overflow-y: scroll;
+}
+
+.messaging-content h5 {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.messaging-content h4 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.direct-message {
+    width: 60%;
+    max-height: 200px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border: 1px solid #7777ff;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.direct-message p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.direct-message-header {
+    width: 100%;
+    background-color: #7777ff;
+    color: white;
+}
+
+.direct-message-header p {
+    width: 45%;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.dm-right {
+    margin-left: 35%;
+}
+
+.direct-message .message {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.messaging-footer {
+    display: grid;
+    grid-template-columns: 85% 1fr;
+    align-items: center;
+}
+
+.messaging-input {
+    width: 100%;
+}

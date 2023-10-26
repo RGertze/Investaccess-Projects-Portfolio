@@ -1,0 +1,50 @@
+.appointments-page-container {
+    padding: 30px;
+    align-items: unset;
+}
+
+.appointments-page-container h1 {
+    width: 100%;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.appointments-page-col {
+    width: 45%;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+}
+
+.appointments-page-col-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #444;
+    /* background-color: #0d6efd; */
+    background-color: #dbdcff;
+}
+
+.appointments-view-toggle {
+    width: 100%;
+    padding: 20px;
+    padding-top: 0;
+}
+
+
+
+@media (max-width: 800px) {
+    .appointments-page-container {
+        padding: 0;
+        padding-top: 10px;
+    }
+
+    .appointments-page-container h1 {
+        margin-bottom: 10px;
+    }
+
+    .appointments-page-col {
+        width: 97%;
+        margin-bottom: 20px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+}

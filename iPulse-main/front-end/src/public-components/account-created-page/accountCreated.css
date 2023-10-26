@@ -1,0 +1,26 @@
+.account-created-container {
+    width: 100%;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.account-created-message {
+    width: 50%;
+}
+
+.account-created-message h5 {
+    color: #8888FF;
+}
+
+.account-created-message-header {
+    width: 100%;
+    padding: 5px;
+    background-color: #8888FF;
+    color: white;
+}
+
+@media (max-width:800px) {
+    .account-created-message {
+        width: 80%;
+    }
+}

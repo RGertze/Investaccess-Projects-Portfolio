@@ -1,0 +1,11 @@
+.doctor-home-container {
+    width: 100%;
+    min-height: 500px;
+    padding-top: 30px;
+}
+
+.pending-appointments-container {
+    width: 95%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

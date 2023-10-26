@@ -1,0 +1,28 @@
+.admin-parent-page-container {
+    padding-top: 30px;
+}
+
+.admin-parent-details {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+.user-details img {
+    width: 200px;
+    height: 200px;
+}
+
+.parent-details-buttons {
+    grid-column: 1/3;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+    .admin-parent-details {
+        width: 97%;
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,91 @@
+#parent-card-container{
+    width: 90%;
+    height: fit-content;
+    border-bottom: 1px solid white;
+}
+
+#parent-card-details{
+    width: 100%;
+}
+
+#parent-card-details p{
+    width: 90%;
+    max-width: 90%;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#parent-card-details:hover{
+    cursor: pointer;
+}
+#parent-card-details:hover #parent-name{
+    color: #BBBBBB;
+}
+
+#parent-name{
+    text-decoration: underline;
+}
+
+.parent-user-id{
+    width: 50%;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: #232F34;
+    border-radius: 10px;
+}
+
+#parent-buttons-container{
+    width: 400px;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.parent-edit-button{
+    color: white;
+}
+.parent-edit-button:hover{
+    color: #AAAAAA;
+    cursor: pointer;
+}
+
+.parent-delete-button{
+    color: #FF0000;
+}
+.parent-delete-button:hover{
+    color: #AA0000;
+    cursor: pointer;
+}
+
+#parent-update-password-button{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 30px;
+
+    text-align: center;
+
+    color: white;
+    background-color: #344045;
+
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#parent-update-password-button:hover{
+    cursor: pointer;
+    background-color: #566267;
+}
+
+@media (max-width: 960px){
+    #parent-card-container{
+        width: 97%;
+    }
+}
+

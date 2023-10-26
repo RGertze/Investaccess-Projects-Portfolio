@@ -1,0 +1,24 @@
+.appointment-status-container {
+    width: 60%;
+    margin-top: 60px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.appointment-status-title {
+    background-color: #88f;
+    color: white;
+    padding: 20px;
+}
+
+.appointment-status-title-error {
+    background-color: #f88;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+    .appointment-status-container {
+        width: 90%;
+    }
+}

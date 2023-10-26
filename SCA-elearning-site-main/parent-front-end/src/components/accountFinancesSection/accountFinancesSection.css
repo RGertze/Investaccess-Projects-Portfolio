@@ -1,0 +1,57 @@
+#account-finances-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    font-family: sans-serif;
+}
+
+#parent-finances-details-container{
+    width: 90%;
+    font-family: sans-serif;
+}
+
+#parent-finances-details-container h2{
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#parent-finances-details{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #74CBAE;
+    overflow: hidden
+}
+
+.parent-finances-details-header{
+    color: white;
+    background-color: #74CBAE;
+}
+
+.parent-finances-details-header h4{
+    width: 90%;
+    text-align: center;
+}
+#parent-finances-details p{
+    width: 90%;
+    text-align: center;
+}
+
+@media (max-width: 960px){
+    #account-finances-container{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    #parent-finances-details-container{
+        width: 97%;
+    }
+}
+
+
+

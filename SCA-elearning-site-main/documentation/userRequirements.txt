@@ -1,0 +1,36 @@
+Problem description:
+-   Design and build an elearning site that allows staff to share course material and grades with students for their respective subjects.
+-   Students should be able to enroll in subjects and upload documents.
+
+What needs to be done:
+-   Design and build a front-end for users to interact with
+-   Design and build a back-end to handle processing
+-   Design and implement a database model to handle user and course related data
+-   Deploy the site and database to hosting service
+-   Setup TLS for the site once deployed
+-   Register a domain name for the site
+
+Back-end tasks:
+-   Setup a server that allows the front-end to connect
+-   Setup a connection to the database
+-   Provide api endpoints for use by the front-end
+-   Provide interfaces for the data to be stored in the database
+-   Provide enums for the query functions used by the database
+-   Provide class that facilitates connection to database and subsequent queries
+-   Make use of session keys or tokens to keep track of users currently logged in
+
+Front-end tasks:
+-   Implement navbar and sidebar that allows for site navigation
+-   Create section for signup, login, course enrollment, course view, staff view, contact details view, student view
+-   Create subsections in student view for viewing all grades, viewing all subjects
+-   Create subsections in course view for uploading assignments, viewing uploaded assignments, viewing grades, viewing course material
+-   Create course administration section for staff
+-   Create subsections in course administration for uploading grades, uploading course material, view uploaded assignments
+
+Database tasks:
+-   Create tables for students, staff, subjects, grades, files paths
+-   Create queries for viewing data in all tables based on certain criteria
+-   Create queries for populating tables with data
+-   Create queries for updating data in tables
+-   Create queries for deleting data from tables
+-   Create queries for advanced data searches

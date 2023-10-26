@@ -1,0 +1,31 @@
+#registration-container{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 100px;
+    font-family: sans-serif;
+}
+
+#registration-form{
+    width: 600px;
+    height: fit-content;
+    background-color: #ED9D60;
+    border: 2px solid maroon;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+.registration-input{
+    width: 90%;
+}
+
+.registration-input h2{
+    width: 90%;
+    color: white;
+    font-size: 19px;
+}
+
+@media (max-width: 960px){
+    #registration-form{
+        width: 97%;
+    }
+}

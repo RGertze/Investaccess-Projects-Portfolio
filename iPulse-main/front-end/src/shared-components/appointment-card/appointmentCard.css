@@ -1,0 +1,78 @@
+.appointment-card-container {
+    width: 90%;
+
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-template-rows: 40px 1fr;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.appointment-card-user {
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: #eeeeff;
+}
+
+.appointment-card-user img {
+    width: 150px;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.appointment-card-user h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.appointment-card-user p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.appointment-card-status {
+    grid-row: 1;
+    grid-column: 2;
+    background-color: #eeffee;
+    padding-right: 20px;
+}
+
+.appointment-card-button {
+    margin-left: 10px;
+}
+
+.appointment-card-badge {
+    margin-left: 20px;
+}
+
+.appointment-card-details td {
+    max-height: 30px;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    .appointment-card-container {
+        width: 97%;
+    }
+
+    .appointment-card-user h5 {
+        font-size: 15px;
+        width: 98%;
+    }
+
+    .appointment-card-user p {
+        font-size: 12px;
+        width: 98%;
+    }
+
+    .appointment-card-user img {
+        width: 95px;
+        height: 80px;
+    }
+
+    .appointment-card-details td {
+        font-size: 10px;
+    }
+}

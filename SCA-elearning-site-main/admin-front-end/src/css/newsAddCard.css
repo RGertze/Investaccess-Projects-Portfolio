@@ -1,0 +1,57 @@
+#news-add-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    min-height: 4vh;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+    color: white;
+    background-color: #232F34;
+
+    border-radius: 10px;
+}
+
+#news-add-card-title{
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: sans-serif;
+}
+
+#news-add-card-title:hover{
+    cursor: pointer;
+    color: #9999FF;
+}
+
+#news-add-card-input-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-add-card-input-file{
+    width: 45%;
+    margin-bottom: 20px;
+    background-color: #121E23;
+}
+
+@media (max-width: 960px){
+    #news-add-card-container{
+        width: 85%;
+    }
+    #news-add-card-text-input{
+        width: 90%;
+    }
+}
+
+

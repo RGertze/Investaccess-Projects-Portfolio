@@ -1,0 +1,83 @@
+
+#student-assignment-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 1%;
+
+    border: 1px solid #82332E;
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+#student-assignment-card-header{
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    align-items: center;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+    color: white;
+    background-color: #CB7B3E;
+}
+
+#student-assignment-card-header p{
+    width: 100%;
+    text-align: center;
+}
+
+#student-assignment-card-toggle:hover{
+    cursor: pointer;
+}
+
+.student-card-assignments-uploaded{
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    align-self: center;
+
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: darkblue;
+    text-decoration: underline;
+}
+
+.student-card-assignments-uploaded:hover{
+    cursor: pointer;
+    font-size: large;
+}
+
+@media (max-width: 960px){
+    #student-assignment-card-container{
+        width: 95%;
+        font-size: xx-small;
+    }
+
+    #student-assignment-card-header p{
+        padding-left: 10px;
+    }
+}
+
+
+
+
+

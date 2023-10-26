@@ -1,0 +1,39 @@
+.add-slot-input {
+    width: 100%;
+}
+
+.slots-container {
+    width: 100%;
+    height: fit-content;
+    min-height: 100px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.add-slot-days {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    background-color: #efefef;
+}
+
+.add-slot-label {
+    color: #66f;
+    font-weight: bold;
+}
+
+.add-slot-buttons {
+    justify-content: end;
+}
+
+.add-slot-btn {
+    margin-left: 20px;
+}
+
+.add-slot-results {
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}

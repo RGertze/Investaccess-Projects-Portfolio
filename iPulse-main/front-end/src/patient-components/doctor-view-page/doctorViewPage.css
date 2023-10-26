@@ -1,0 +1,35 @@
+.doctor-view-page-container {
+    width: 100%;
+    padding: 30px;
+}
+
+.doctor-view-details {
+    width: 75%;
+}
+
+.doctor-view-alert {
+    width: 500px;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.doctor-view-alert p {
+    padding: 0;
+}
+
+
+@media (max-width:800px) {
+    .doctor-view-page-container {
+        padding: 5px;
+    }
+
+    .doctor-view-details {
+        width: 99%;
+    }
+
+    .doctor-view-alert {
+        width: 300px;
+        padding: 0;
+        padding-top: 5px;
+    }
+}

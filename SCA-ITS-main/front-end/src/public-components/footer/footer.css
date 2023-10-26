@@ -1,0 +1,13 @@
+.public-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+@media(max-width: 1000px) {
+    .public-footer {
+        height: fit-content;
+    }
+}

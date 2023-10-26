@@ -1,0 +1,122 @@
+#course-topic-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    background-color: #344045;
+    border-radius: 5px;
+}
+#course-topic-title{
+    width: 100%;
+    height: fit-content;
+    font-family: sans-serif;
+    padding-top: 0;
+}
+#course-topic-title h4{
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#course-topic-title h4:hover{
+    cursor: pointer;
+    color: #8888FF;
+}
+
+#course-material-options{
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr 2px 1fr;
+    align-items: center;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #232F34;
+    border-radius: 5px 5px 0 0;
+}
+.course-material-option{
+    padding: 0;
+}
+.course-material-option h4{
+    width: fit-content;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+    word-wrap: break-word;
+}
+.course-material-option:hover{
+    cursor: pointer;
+}
+.divisor{
+    width: 2px;
+    height: 30px;
+    background-color: white;
+    align-self: center;
+}
+
+.approved{
+    color: #4BEE2B;
+}
+.unapproved{
+    color: #EE4B2B;
+}
+.marked-for-deletion{
+    color: orange;
+}
+
+.course-material-unapproved{
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    width: 90%;
+    max-width: 90%;
+}
+.course-material-unapproved div{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    width: 80%;
+    height: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.course-material-unapproved div:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.course-material-unapproved h3{
+    width: 90%;
+    align-self: center;
+    text-align: center;
+    word-wrap: break-word;
+    color: white;
+}
+
+.course-material-approved{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 960px){
+    #course-topic-item{
+        width: 100%;
+    }
+    #course-material-options{
+        width: 95%;
+    }
+}

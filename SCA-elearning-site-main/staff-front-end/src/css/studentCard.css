@@ -1,0 +1,117 @@
+#student-card-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 80%;
+    height: fit-content;
+    min-height: 10%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-family: sans-serif;
+
+    background-color: white;
+
+    border-bottom: 1px solid black;
+}
+
+#student-card-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 100%;
+}
+
+#student-card-header:hover{
+    cursor: pointer;
+}
+
+#student-card-header:hover #student-card-name{
+    font-size: large;
+    text-decoration: underline;
+    color: maroon;
+}
+
+.student-card-head-values{
+    margin-left: auto;
+    margin-right: auto;
+
+    align-self: center;
+
+    font-family: Courier;
+}
+
+#student-card-id{
+    grid-column: 1;
+}
+#student-card-name{
+    grid-column: 2;
+}
+#student-card-surname{
+    grid-column: 3;
+}
+
+.student-title{
+    font-size: 20px;
+    text-decoration: underline;
+    color: #333;
+}
+
+#student-assessment-header{
+    border-bottom: 2px solid #444;
+    margin-bottom: 20px;
+}
+
+.student-assessment-table{
+    display: grid;
+    grid-template-columns: 50% 1fr 1fr;
+    align-items: center;
+
+    width: 70%;
+    text-align: center;
+
+    color: #333;
+}
+
+.edit-button:hover{
+    cursor: pointer;
+    color: #777;
+}
+
+#student-task-header{
+    margin-top: 30px;
+}
+
+#student-card-assignments-container{
+    width: 100%;
+}
+
+.student-quiz-table h4{
+    width: fit-content;
+    color: #3333FF;
+    text-decoration: underline;
+}
+
+.student-quiz-table h4:hover{
+    cursor: pointer;
+    color: #5555FF;
+}
+
+
+@media (max-width: 960px){
+    #student-card-container{
+        width: 98%;
+    }
+
+    .student-assessment-table{
+        width: 95%;
+    }
+}
+
+
+
+

@@ -1,0 +1,46 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    restart: always
+    environment:
+      ACCEPT_EULA: Y
+      MSSQL_SA_PASSWORD: BCity@123
+      MSSQL_PID: Developer
+    ports:
+      - 1433:1433
+    volumes:
+      - 'bcity_db:/var/opt/mssql'
+    networks:
+      - my-network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8082:8080
+    networks:
+      - my-network
+  # app:
+  #   build:
+  #     context: .
+  #     dockerfile: app.Dockerfile
+  #   restart: always
+  #   depends_on:
+  #     db:
+  #       condition: service_started
+  #   ports:
+  #     - 5000:5000
+  #   expose:
+  #     - 5000
+  #   networks:
+  #     - my-network
+
+volumes:
+  bcity_db:
+
+networks:
+  my-network:
+    name: bcity-test-network

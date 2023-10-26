@@ -1,0 +1,15 @@
+.parent-registration-form-container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    text-align: center;
+    margin: 10px;
+}
+
+@media(max-width: 800px) {
+
+    .parent-registration-form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}

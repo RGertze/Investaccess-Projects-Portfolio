@@ -1,0 +1,31 @@
+#course-taken-card-container{
+    display: grid;
+
+    grid-template-columns: 20% 30% 1fr;
+
+    width: 80%;
+
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+
+    background-color: #232F34;
+
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+.course-taken-card-values{
+    text-align: center;
+
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 960px){
+    #course-taken-card-container{
+        width: 95%;
+        align-items: center;
+    }
+}

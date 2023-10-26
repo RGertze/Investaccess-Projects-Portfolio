@@ -1,0 +1,102 @@
+.registration-container {
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 8%;
+    padding-bottom: 300px
+}
+
+.register-form-container {
+    width: 71%;
+    min-height: 250px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    overflow: hidden;
+    background: radial-gradient(25.65% 60.12% at 31.79% 50%, #F7F7F7 0%, #DDDDDD 100%);
+}
+
+.register-form {
+    padding: 40px;
+}
+
+.sign-up-header {
+    width: 100%;
+    text-align: center;
+}
+
+.sign-up-header h2 {
+    width: 100%;
+    height: 47px;
+    font-family: 'Constantia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 35px;
+    color: #E63844;
+    text-shadow: 0px 3.59637px 3.59637px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.sign-up-header h5:hover {
+    cursor: pointer;
+}
+
+.register-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background: #E63844 !important;
+    border: 1px solid #A20A00;
+    width: 87px;
+    height: 50px;
+
+    font-family: 'Dangrek' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 21px !important;
+    line-height: 24px !important;
+
+    text-align: center;
+    letter-spacing: 0.03em !important;
+
+    color: #FFFFFF !important;
+}
+
+.register-btn:hover {
+    opacity: 0.8;
+    border: 1px solid red !important;
+}
+
+@media (max-width:1000px) {
+    .registration-container {
+        padding-bottom: 100px;
+    }
+
+    .register-form-container {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .sign-up-header {
+        margin-top: 10px;
+    }
+
+    .register-form {
+        padding: 10px;
+    }
+
+
+    .sign-up-header h2 {
+        font-size: 25px;
+    }
+
+    .sign-up-header h5 {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,5 @@
+.nuget/
+.vscode-server/
+dbData/
+obj/
+bin/

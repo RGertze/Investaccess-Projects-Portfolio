@@ -1,0 +1,26 @@
+.work-history-card {
+    width: 45%;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 15px;
+}
+
+.work-history-card h5 {
+    text-decoration: underline;
+}
+
+.work-history-card-table {
+    width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .work-history-card {
+        width: 90%;
+    }
+
+    .work-history-card-table {
+        width: 99%;
+    }
+}

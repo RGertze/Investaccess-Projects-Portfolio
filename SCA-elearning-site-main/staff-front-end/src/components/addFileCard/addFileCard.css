@@ -1,0 +1,102 @@
+#add-file-card-overlay{
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+    font-family: sans-serif;
+}
+
+#add-file-card-container{
+    z-index: 1001;
+
+    width: 50%;
+    height: fit-content;
+    max-height: 90%;
+    align-items: center;
+
+    background-color: white;
+    border: 2px solid #555;
+    border-radius: 10px;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.add-file-card-str-input{
+    width: 70%;
+}
+
+#add-file-card-file-input{
+    width: 60%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background-color: #AAA;
+}
+
+#add-file-card-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+
+    width: 100%;
+    height: 60px;
+
+    background-color: #AAA;
+
+}
+
+.add-file-card-button{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-color: #CB7B3E;
+}
+
+.add-file-card-button:hover{
+    cursor: pointer;
+    color: #CCCCCC;
+}
+
+@media (max-width: 960px){
+    #add-file-card-container{
+        width: 90%;
+    }
+    .add-file-card-str-input{
+        width: 80%;
+    }
+    .add-file-card-str-input input{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #add-file-card-file-input{
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

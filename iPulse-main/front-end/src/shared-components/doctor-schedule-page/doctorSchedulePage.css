@@ -1,0 +1,94 @@
+.doctor-schedule-container {
+    padding-top: 30px;
+}
+
+.doctor-schedule-container h2 {
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.doctor-schedule-tabs {
+    width: 80%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+.schedule-tab {
+    width: 80%;
+    padding-top: 20px;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.schedule-header {
+    justify-content: right;
+    margin-bottom: 20px;
+}
+
+.schedule-new-btn {
+    width: 200px;
+    justify-self: left;
+}
+
+.schedule-slots-container {
+    min-height: 100px;
+    padding-bottom: 15px;
+    border: 1px solid #dddddd;
+    overflow: hidden;
+    align-items: baseline;
+}
+
+.schedule-slots-container h5 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #dbdcff;
+    color: #444444;
+}
+
+.schedule-slots-container p {
+    width: 100%;
+    text-align: center;
+}
+
+.schedule-slot {
+    width: 200px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: space-evenly;
+    background-color: #6666FF;
+    color: white;
+}
+
+.schedule-slot h6 {
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+
+
+@media (max-width: 800px) {
+    .doctor-schedule-container {
+        padding-top: 10px;
+    }
+
+    .doctor-schedule-tabs {
+        width: 98%;
+    }
+
+    .schedule-tab {
+        width: 98%;
+    }
+
+    .schedule-slot {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,70 @@
+name: .NET
+
+on:
+  push:
+    branches: ["main", "production"]
+  pull_request:
+    branches: ["main", "production"]
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    env:
+      DB_USER: root
+      DB_PASSWORD: "root"
+      DB_HOST: localhost
+
+    steps:
+      - name: Setup database
+        run: |
+          sudo /etc/init.d/mysql start
+          mysql -e 'CREATE USER "dev"@"localhost" IDENTIFIED BY "Dev@1234"; GRANT ALL PRIVILEGES ON *.* TO "dev"@"localhost"; FLUSH PRIVILEGES;' -uroot -proot
+
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.x
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Restore back-end dependencies
+        run: |
+          cd ./back-end
+          dotnet restore
+
+      - name: Restore unit tests dependencies
+        run: |
+          cd ./back-end-unit-tests
+          dotnet restore
+
+      - name: Restore integration tests dependencies
+        run: |
+          cd ./back-end-integration-tests
+          dotnet restore
+
+      - name: Build front-end and copy dist files
+        run: |
+          bash ./scripts/buildFrontEnd.sh
+        env:
+          CI: false
+
+      - name: Build back-end
+        run: |
+          cd ./back-end
+          dotnet build --no-restore
+
+      - name: Run Unit tests
+        run: |
+          cd ./back-end-unit-tests
+          dotnet test --verbosity normal
+
+      - name: Run Integration tests
+        run: |
+          cd ./back-end-integration-tests
+          dotnet test --verbosity normal

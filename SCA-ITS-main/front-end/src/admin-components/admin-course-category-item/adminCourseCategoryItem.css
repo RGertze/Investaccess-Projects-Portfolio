@@ -1,0 +1,17 @@
+.course-category-item {}
+
+.course-category-item-icon {
+    margin-right: 5px;
+}
+
+.course-category-item-text {
+    padding: 5px;
+    max-width: 70%;
+}
+
+@media(max-width: 800px) {
+    .course-category-item-text {
+        padding: 5px;
+        max-width: 100px;
+    }
+}

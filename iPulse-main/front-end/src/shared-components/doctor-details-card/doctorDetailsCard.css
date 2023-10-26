@@ -1,0 +1,50 @@
+.doctor-details-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin-bottom: 20px;
+}
+
+.details-user {
+    grid-column: 1;
+}
+
+.details-user h4,
+.details-user p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+.details-user img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.details-tabs {
+    grid-column: 2;
+}
+
+.reviews-tab {
+    padding-top: 20px;
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+@media (max-width: 800px) {
+    .doctor-details-container {
+        display: grid;
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .details-user {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .details-tabs {
+        grid-column: 1;
+        grid-row: 2;
+    }
+}

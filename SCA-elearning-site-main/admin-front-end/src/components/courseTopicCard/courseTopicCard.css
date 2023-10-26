@@ -1,0 +1,47 @@
+#course-topic-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    min-height: 50px;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+
+    background-color: #232F34;
+
+    border: 1px solid #344045;
+    border-radius: 10px;
+
+}
+
+#course-topic-card-heading{
+    height: 50px;
+    text-align: center;
+}
+#course-topic-card-heading:hover{
+    cursor: pointer;
+    color: #8888FF;
+}
+
+#course-topics-list{
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 960px){
+
+    #course-topic-card-container{
+        width: 95%;
+    }
+
+    #course-topics-add-container{
+        width: 80%;
+    }
+}
+

@@ -1,0 +1,51 @@
+#chat-contacts-card-container{
+    width: 80%;
+    min-height: 40px;
+    height: fit-content;
+    max-height: 250px;
+
+    overflow: auto;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #888;
+}
+
+#chat-contacts-card-header{
+    justify-content: center;
+    height: 40px;
+    color: #FFFFFF;
+    background-color: #344045;
+}
+
+#chat-contacts-card-header:hover{
+    cursor: pointer;
+    color: #AAA;
+}
+
+#chat-contacts-card-list{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#chat-contacts-card-list h2{
+    color: white;
+}
+
+.chat-contact{
+    width: 80%;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #888;
+    color: #FFFFFF;
+}
+
+.chat-contact:hover{
+    cursor: pointer;
+    color: #AAA;
+}

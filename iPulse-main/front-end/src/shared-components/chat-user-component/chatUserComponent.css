@@ -1,0 +1,36 @@
+.chat-user-container {
+    width: 90%;
+    min-height: 80px;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: 80px 1fr 50px;
+    align-items: center;
+    overflow: hidden;
+    /* border: 2px solid #eeeeee; */
+}
+
+.chat-user-container:hover {
+    cursor: pointer;
+}
+
+.chat-user-container img {
+    width: 70px;
+    height: 70px;
+}
+
+.chat-user-details {
+    padding-left: 10px;
+    overflow: auto;
+}
+
+.chat-user-details h4 {
+    padding: 0;
+    margin: 0;
+    font-size: larger;
+}
+
+.unseen-badge {
+    width: 35px;
+    height: fit-content;
+}

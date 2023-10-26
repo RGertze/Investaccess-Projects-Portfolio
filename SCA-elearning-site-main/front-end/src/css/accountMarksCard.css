@@ -1,0 +1,59 @@
+#account-marks-card-container{
+    grid-column: 2;
+
+    background-color: rgb(250, 250, 250);
+    border-left: 1px solid #AAAAAA;
+}
+
+#account-marks-card-title{
+    width: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 15px;
+
+    text-align: center;
+
+    color: #333333;
+
+    border-bottom: 2px solid #999999;
+}
+
+#account-marks-card-header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+
+    text-align: center;
+
+    border-bottom: 2px solid #2222FF;
+}
+
+.account-marks-card-header-value{
+    color: #222222;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 960px){
+    #account-marks-card-container{
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 20px;
+        text-align: center;
+        background-color: rgb(250, 250, 250);
+
+        border-left: none;
+    }
+
+    #account-marks-card-header-container{
+        margin-top: 0px;
+    }
+}

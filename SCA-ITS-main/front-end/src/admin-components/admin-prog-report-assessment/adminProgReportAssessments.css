@@ -1,0 +1,38 @@
+.report-assessment-container {
+    width: 80%;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    background-color: #eeeeee;
+}
+
+.accordian-report-assessment-header {
+    display: grid;
+
+    grid-template-columns: 1fr 30% 20%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.category-buttons {
+    width: 200px;
+}
+
+.admin-categories-header {
+    width: 97%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid #ddddff;
+    margin-bottom: 20px;
+}
+
+.admin-categories-header h5 {
+    color: #444;
+}
+
+@media(max-width: 900px) {
+    .report-assessment-container {
+        width: 97%;
+    }
+}

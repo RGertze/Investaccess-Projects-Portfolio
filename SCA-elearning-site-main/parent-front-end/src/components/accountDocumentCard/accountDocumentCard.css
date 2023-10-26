@@ -1,0 +1,60 @@
+#parent-files-container{
+    width: 90%;
+    height: fit-content;
+    min-height: 50%;
+    max-height: 400px;
+    margin-bottom: 20px;
+    color: #333;
+    background-color: #EFEFEF;
+    overflow-y: auto;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+#parent-files-title{
+    width: 100%;
+    background-color: white;
+}
+#parent-files-title h2{
+    width: fit-content;
+    text-decoration: underline;
+}
+
+#files-header{
+    height: 50px;
+    justify-content: center;
+    color: white;
+    background-color: #74CBAE;
+}
+
+#files-header h3{
+    width: 100%;
+    text-align: center;
+}
+
+.files-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+.files-table p{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#parent-file-name{
+    color: #5555FF;
+    text-decoration: underline;
+}
+#parent-file-name:hover{
+    color: #2222FF;
+    cursor: pointer;
+}
+
+@media (max-width: 960px){
+    #parent-files-container{
+        width: 97%;
+    }
+}

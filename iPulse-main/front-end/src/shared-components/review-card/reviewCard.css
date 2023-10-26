@@ -1,0 +1,83 @@
+.review-card-container {
+    width: 400px;
+    height: 160px;
+
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 40px 85px 30px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.review-card-user {
+    grid-row: 1/4;
+    grid-column: 1;
+}
+
+.review-card-user img {
+    width: 90px;
+    height: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.review-card-user h5 {
+    margin: 0;
+    padding: 0;
+    font-size: smaller;
+}
+
+.review-card-user p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+    font-size: x-small;
+}
+
+.review-card-date {
+    grid-row: 1;
+    grid-column: 2;
+    padding-right: 10px;
+}
+
+.review-card-date p {
+    margin: 0;
+    font-size: smaller;
+    margin-right: 20px;
+}
+
+.review-card-date {}
+
+.review-card-comment {
+    grid-row: 2;
+    grid-column: 2;
+
+    overflow-y: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+}
+
+.review-card-comment {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.review-card-stars {}
+
+.review-star {
+    margin-left: 5px;
+}
+
+
+@media(max-width: 800px) {
+    .review-card-container {
+        width: 99%;
+        height: 160px;
+    }
+
+    .review-card-date p {
+        font-size: x-small;
+    }
+}

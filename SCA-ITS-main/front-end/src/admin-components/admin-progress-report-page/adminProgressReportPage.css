@@ -1,0 +1,25 @@
+.admin-template-categories {
+    width: 100%;
+}
+
+.admin-template-categories-header {
+    width: 97%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 1px solid #ddddff;
+    margin-bottom: 20px;
+}
+
+.admin-template-categories-header h2 {
+    color: #444;
+}
+
+.admin-template-categories h6 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.admin-template-categories hr {
+    width: 90%;
+    color: #333;
+}

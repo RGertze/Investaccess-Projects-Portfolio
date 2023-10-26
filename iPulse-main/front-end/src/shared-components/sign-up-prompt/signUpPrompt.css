@@ -1,0 +1,16 @@
+.sign-up-prompt-container h2 {
+    width: 100%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sign-up-prompt-container p {
+    width: 100%;
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+}
+
+.sign-up-prompt-btn {
+    font-size: larger;
+}

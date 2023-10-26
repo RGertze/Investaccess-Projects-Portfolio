@@ -1,0 +1,41 @@
+.registration-container {
+    width: 100%;
+    padding: 30px;
+    min-height: 500px;
+}
+
+.registration-container input::placeholder {
+    color: white;
+}
+
+.register-form-container {
+    width: 50%;
+    min-height: 250px;
+}
+
+.sign-up-header {
+    width: 100%;
+}
+
+.sign-up-header h1 {
+    font-weight: bolder;
+}
+
+.sign-up-header h5:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media (max-width:800px) {
+    .register-form-container {
+        width: 100%;
+    }
+
+    .sign-up-header h2 {
+        font-size: 25px;
+    }
+
+    .sign-up-header h5 {
+        font-size: 15px;
+    }
+}

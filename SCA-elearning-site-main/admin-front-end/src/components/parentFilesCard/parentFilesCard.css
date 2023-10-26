@@ -1,0 +1,66 @@
+#parent-files-container{
+    width: 60%;
+    height: fit-content;
+    max-height: 250px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #232F34;
+    overflow-y: auto;
+    font-family: sans-serif;
+    border: 1px solid #344045;
+    border-radius: 10px;
+}
+
+#parent-files-title{
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#parent-files-title div{
+    height: 50px;
+}
+#parent-files-title div:hover{
+    cursor: pointer;
+    color: #AAA;
+}
+
+#files-header{
+    border-bottom: 2px solid white;
+}
+#files-header h3{
+    text-align: center;
+}
+
+.files-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 40px;
+    align-items: center;
+    width: 90%;
+}
+.files-table p{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#parent-file-name{
+    color: #5555FF;
+    text-decoration: underline;
+}
+#parent-file-name:hover{
+    color: #2222FF;
+    cursor: pointer;
+}
+
+@media (max-width: 960px){
+    #parent-files-container{
+        width: 95%;
+    }
+    #parent-files-title div h2{
+        font-size: 18px;
+    }
+}
+
+

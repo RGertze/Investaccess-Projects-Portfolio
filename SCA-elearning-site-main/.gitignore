@@ -1,0 +1,16 @@
+node_modules/
+back-end/package-lock.json
+front-end/package-lock.json
+staff-front-end/package-lock.json
+admin-front-end/package-lock.json
+output.txt
+dist/
+admin-dist/
+student-dist/
+staff-dist/
+uploads/
+course-materials/
+course-assignments/
+student-assignments/
+back-end/.env
+database/parentsn_email_list.xlsx

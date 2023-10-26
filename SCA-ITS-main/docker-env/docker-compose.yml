@@ -1,0 +1,97 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: mysql:8.0.31
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: SCA_ITS
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: Dev@1234
+    ports:
+      - 3307:3306
+    volumes:
+      - ./itsData:/var/lib/mysql
+    networks:
+      - my-network
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8082:8080
+    networks:
+      - my-network
+
+  app:
+    build:
+      context: .
+      dockerfile: app.Dockerfile
+    restart: always
+    depends_on:
+      db:
+        condition: service_started
+    ports:
+      - 5000:5000
+    expose:
+      - 5000
+    networks:
+      - my-network
+
+  moodle_db:
+    image: docker.io/bitnami/mariadb:10.6
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      # - ALLOW_EMPTY_PASSWORD=yes
+      - MARIADB_USER=dev
+      - MARIADB_PASSWORD=Dev@1234
+      - MARIADB_ROOT_PASSWORD=root
+      - MARIADB_DATABASE=moodle
+      - MARIADB_CHARACTER_SET=utf8mb4
+      - MARIADB_COLLATE=utf8mb4_unicode_ci
+    volumes:
+      - 'moodledb_data:/bitnami/mariadb'
+    networks:
+      - my-network
+
+  moodle:
+    build:
+      context: .
+      dockerfile: moodle.Dockerfile
+    container_name: moodle-app
+    extra_hosts:
+      host.docker.internal: host-gateway
+    ports:
+      - '8080:8080'
+      - '8443:8443'
+    environment:
+      - BITNAMI_DEBUG=true
+      - MOODLE_USERNAME=admin
+      - MOODLE_PASSWORD=admin1234
+      - MOODLE_SITE_NAME=SCA Elearning
+      - MOODLE_DATABASE_HOST=moodle_db
+      - MOODLE_DATABASE_PORT_NUMBER=3306
+      - MOODLE_DATABASE_USER=dev
+      - MOODLE_DATABASE_NAME=moodle
+      - MOODLE_DATABASE_PASSWORD=Dev@1234
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      # - ALLOW_EMPTY_PASSWORD=yes
+    volumes:
+      - 'moodle_data:/bitnami/moodle'
+      - 'moodledata_data:/bitnami/moodledata'
+    depends_on:
+      - moodle_db
+    networks:
+      - my-network
+volumes:
+  moodledb_data:
+  moodle_data:
+  moodledata_data:
+
+
+networks:
+  my-network:
+    name: its-network

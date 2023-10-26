@@ -1,0 +1,892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="8143af55-2479-402c-ac19-3cd7ac0912f9" name="@john-hpprobook450g7 2022-08-11 21:30:49" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-08-11T21:30:49.0828118+02:00" queuing="2022-08-11T21:30:49.0828118+02:00" start="2022-08-11T21:30:17.5585608+02:00" finish="2022-08-11T21:31:12.7352766+02:00" />
+  <TestSettings name="default" id="cb321ef4-047a-4eee-8a9a-c00ffc3fd458">
+    <Deployment runDeploymentRoot="_john-hpprobook450g7_2022-08-11_21_30_49" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="b8ecc375-76d2-4f22-ab11-97b08d1855b9" testId="a0299adf-f508-f5d5-3e50-a8b75312f721" testName="back_end_tests.StudentTests.Post_AddStudentValid" computerName="john-hpprobook450g7" duration="00:00:00.2578667" startTime="2022-08-11T21:30:52.9000996+02:00" endTime="2022-08-11T21:30:52.9001001+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8ecc375-76d2-4f22-ab11-97b08d1855b9">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ffd8397d-c397-482b-bf8c-e9152d26dcd7" testId="aebdcebf-8e7a-c63e-aa5f-c311c398d305" testName="back_end_tests.S3Tests.Post_GetPresignedPutUrlInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:28.3720825" startTime="2022-08-11T21:30:47.7681585+02:00" endTime="2022-08-11T21:30:47.7681586+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffd8397d-c397-482b-bf8c-e9152d26dcd7">
+      <Output>
+        <StdOut>StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  WWW-Authenticate: Bearer
+}</StdOut>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at back_end_tests.S3Tests.Post_GetPresignedPutUrlInvalid_BadRequest() in /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs:line 87
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="53962d0e-b0a8-4a80-a3f6-782ad52df7ff" testId="9334fecf-6862-093c-1e87-009d89aaadd0" testName="back_end_tests.AuthTests.Get_ValidUserAccountDeregistration" computerName="john-hpprobook450g7" duration="00:00:29.7896284" startTime="2022-08-11T21:30:49.1474492+02:00" endTime="2022-08-11T21:30:49.1474494+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53962d0e-b0a8-4a80-a3f6-782ad52df7ff" />
+    <UnitTestResult executionId="01eacaf4-a151-4c33-a04a-84a89bcb9fcb" testId="431f9e60-47fd-9ef3-213a-7e51e348cd67" testName="back_end_tests.AuthTests.Post_InvalidUserRegistration_UserExists_ReturnsConflict" computerName="john-hpprobook450g7" duration="00:00:00.0272258" startTime="2022-08-11T21:30:53.0264716+02:00" endTime="2022-08-11T21:30:53.0264721+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01eacaf4-a151-4c33-a04a-84a89bcb9fcb" />
+    <UnitTestResult executionId="8e443884-8c5a-464e-9d8f-b0620722c54a" testId="20994a2e-965c-d9f3-b03c-da7082c27311" testName="back_end_tests.RegistrationTests.GetRegistrationStatusForStudentInvalid_StudentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0048159" startTime="2022-08-11T21:31:09.1381691+02:00" endTime="2022-08-11T21:31:09.1381691+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e443884-8c5a-464e-9d8f-b0620722c54a">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c5c56e55-277a-47eb-9b70-8f86a125bf99" testId="506abd08-fbf5-cd2f-98db-0ecbeb9eb1c9" testName="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_FileAlreadyExists" computerName="john-hpprobook450g7" duration="00:00:00.0039297" startTime="2022-08-11T21:31:08.6574553+02:00" endTime="2022-08-11T21:31:08.6574554+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5c56e55-277a-47eb-9b70-8f86a125bf99">
+      <Output>
+        <StdOut>StatusCode: 409, ReasonPhrase: 'Conflict', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"File already exists","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b82630a-84b7-430b-a1c0-c074d6aca454" testId="7661b606-2c29-ab3d-9754-ce16e168c0d8" testName="back_end_tests.ParentTests.Post_EditParentProfileInvalid_ParentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0072581" startTime="2022-08-11T21:31:09.6965464+02:00" endTime="2022-08-11T21:31:09.6965465+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b82630a-84b7-430b-a1c0-c074d6aca454">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Parent not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d32bdd37-a9d0-4f4d-9bc1-e6403f5da484" testId="9dbd392f-77be-0e79-4377-b77fb5a4c593" testName="back_end_tests.StudentTests.Post_EditStudentValid" computerName="john-hpprobook450g7" duration="00:00:33.1959439" startTime="2022-08-11T21:30:52.5592449+02:00" endTime="2022-08-11T21:30:52.5592452+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d32bdd37-a9d0-4f4d-9bc1-e6403f5da484">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="14a74d6e-6140-47dd-989c-724e2248f61f" testId="1fa400c0-0ee3-3936-ed9f-e72c4e1a0a45" testName="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0034584" startTime="2022-08-11T21:31:09.1416221+02:00" endTime="2022-08-11T21:31:09.1416221+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="14a74d6e-6140-47dd-989c-724e2248f61f">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Bad Request","status":400,"traceId":"00-db0f484ec7b0ba1cc894d10ff9a34511-a5c06384ecfcb847-00"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c570ef0d-6f2e-4c4b-a440-6c4c725a5360" testId="932a4267-2407-cf59-5aa2-d621cd88c6a4" testName="back_end_tests.StudentTests.Post_AddStudentInvalid_StudentAlreadyExists" computerName="john-hpprobook450g7" duration="00:00:00.0213013" startTime="2022-08-11T21:30:52.9217525+02:00" endTime="2022-08-11T21:30:52.9217530+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c570ef0d-6f2e-4c4b-a440-6c4c725a5360">
+      <Output>
+        <StdOut>StatusCode: 409, ReasonPhrase: 'Conflict', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="79c1fd42-f729-4867-be54-38b4032ce893" testId="7de18d24-fbde-6f9f-8b72-85162c41f713" testName="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_StudentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0193752" startTime="2022-08-11T21:31:08.5826377+02:00" endTime="2022-08-11T21:31:08.5826377+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="79c1fd42-f729-4867-be54-38b4032ce893">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Student not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="08d5d7ea-9bd0-408d-82c2-4c18f4f349e3" testId="63b7c8e3-885f-5ef4-8049-5ab44d11f00f" testName="back_end_tests.AuthTests.Post_InvalidUserRegistration_BadRequest_ReturnsBadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0142357" startTime="2022-08-11T21:30:49.5078374+02:00" endTime="2022-08-11T21:30:49.5078376+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08d5d7ea-9bd0-408d-82c2-4c18f4f349e3" />
+    <UnitTestResult executionId="571e08c1-1554-420d-ba44-db517985728d" testId="f2932bdd-4394-b2c3-bbee-919a5ed2c6aa" testName="back_end_tests.ParentTests.GetParentProfileValid" computerName="john-hpprobook450g7" duration="00:00:22.3906591" startTime="2022-08-11T21:31:09.6737693+02:00" endTime="2022-08-11T21:31:09.6737694+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="571e08c1-1554-420d-ba44-db517985728d" />
+    <UnitTestResult executionId="fde5b738-ee5f-46fd-b042-0013aa6ccaab" testId="fc79c695-7fa8-a1d8-2916-755b1222d1cb" testName="back_end_tests.RegistrationTests.GetParentRequiredRegistrationDocumentsValid" computerName="john-hpprobook450g7" duration="00:00:00.0104060" startTime="2022-08-11T21:31:08.6679546+02:00" endTime="2022-08-11T21:31:08.6679547+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fde5b738-ee5f-46fd-b042-0013aa6ccaab" />
+    <UnitTestResult executionId="011b5dd2-73d7-4f9d-bb0f-2cd61133515f" testId="9d0f4897-a9a1-ce72-9e4f-e9eb6229148c" testName="back_end_tests.AuthTests.Post_ValidUserRegistration_ReturnsCreated" computerName="john-hpprobook450g7" duration="00:00:03.0386232" startTime="2022-08-11T21:30:52.5515337+02:00" endTime="2022-08-11T21:30:52.5515341+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="011b5dd2-73d7-4f9d-bb0f-2cd61133515f" />
+    <UnitTestResult executionId="4fc63e4a-f4d9-4e89-a5e1-08f288969bde" testId="c4bfa831-3eb6-7d40-c645-b26cbbd6968f" testName="back_end_tests.AuthTests.Post_InvalidPasswordLogin_ReturnsUnauthorized" computerName="john-hpprobook450g7" duration="00:00:00.0046849" startTime="2022-08-11T21:30:49.4872517+02:00" endTime="2022-08-11T21:30:49.4872519+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fc63e4a-f4d9-4e89-a5e1-08f288969bde">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at back_end_tests.AuthTests.Post_InvalidPasswordLogin_ReturnsUnauthorized() in /home/john/Web-projects/SCA-ITS/back-end-tests/AuthTests.cs:line 79
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="27668c47-9b6d-4f1e-97d4-c29a2ecafbc2" testId="6e46a588-5f1e-d1b1-dbb3-d46ecbb8abc9" testName="back_end_tests.StudentTests.GetStudentValid" computerName="john-hpprobook450g7" duration="00:00:00.0758181" startTime="2022-08-11T21:30:53.0125401+02:00" endTime="2022-08-11T21:30:53.0125405+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="27668c47-9b6d-4f1e-97d4-c29a2ecafbc2">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5716d671-b1c3-4118-8111-84a0c751cc4d" testId="e9484059-c80e-ecc7-cb39-bf0f153cc97d" testName="back_end_tests.RegistrationTests.GetStudentRequiredRegistrationDocumentsValid" computerName="john-hpprobook450g7" duration="00:00:00.0084664" startTime="2022-08-11T21:31:08.8276645+02:00" endTime="2022-08-11T21:31:08.8276646+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5716d671-b1c3-4118-8111-84a0c751cc4d" />
+    <UnitTestResult executionId="2ca54c26-d905-4f5c-8d6b-dfdc96f45a0a" testId="aeeec48c-f9b0-ca68-8f2f-1493d3f3f438" testName="back_end_tests.AuthTests.Get_InvalidUserAccountDeregistration_UserDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0087490" startTime="2022-08-11T21:30:52.8021750+02:00" endTime="2022-08-11T21:30:52.8021752+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ca54c26-d905-4f5c-8d6b-dfdc96f45a0a">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: text/html
+  Content-Length: 39
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3cb0cc6f-2503-4093-b9b1-9b856472def3" testId="0f66eab3-aa83-5a2a-b7bd-fa8706c53b65" testName="back_end_tests.RegistrationTests.GetRegistrationStatusForStudentValid" computerName="john-hpprobook450g7" duration="00:00:00.0740065" startTime="2022-08-11T21:31:09.1331530+02:00" endTime="2022-08-11T21:31:09.1331531+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cb0cc6f-2503-4093-b9b1-9b856472def3">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="65fbe3a0-5420-4e90-8f79-4bb0e54b0466" testId="324992b0-2d28-1ecc-7059-527314fcab33" testName="back_end_tests.AdminTests.GetParentRegistrationRequestsInvalid_NotAnAdminToken" computerName="john-hpprobook450g7" duration="00:00:00.0041553" startTime="2022-08-11T21:30:49.5976342+02:00" endTime="2022-08-11T21:30:49.5976344+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65fbe3a0-5420-4e90-8f79-4bb0e54b0466" />
+    <UnitTestResult executionId="90330fa6-e680-48cc-b3c3-c6c6be57cd62" testId="9bfe4691-5eb2-d731-00da-48518e7e341b" testName="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_RequiredDocumentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0147838" startTime="2022-08-11T21:31:08.6534614+02:00" endTime="2022-08-11T21:31:08.6534614+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="90330fa6-e680-48cc-b3c3-c6c6be57cd62">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Required document not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="63e89772-8261-4b87-80e7-3e841f01026f" testId="000bd4fd-c825-c8ac-1d58-2007f8885e94" testName="back_end_tests.RegistrationTests.GetRequiredStudentUploadedDocumentsValid" computerName="john-hpprobook450g7" duration="00:00:00.0111477" startTime="2022-08-11T21:31:09.0589476+02:00" endTime="2022-08-11T21:31:09.0589477+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63e89772-8261-4b87-80e7-3e841f01026f">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"","data":[{"fileName":"does it matter?","filePath":"some-file-path-idk"}]}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fcad8e52-dbd1-43bf-aa62-a926f0a7d715" testId="1bb0d043-1610-9466-97e8-ed0905837f53" testName="back_end_tests.RegistrationTests.GetRequiredStudentUploadedDocumentsInvalid_StudentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0096119" startTime="2022-08-11T21:31:08.6349369+02:00" endTime="2022-08-11T21:31:08.6349370+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fcad8e52-dbd1-43bf-aa62-a926f0a7d715">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="65736765-d879-4ff6-b280-7dd39ee431f1" testId="753b4fa1-e67a-4efa-59d9-633dd25ea951" testName="back_end_tests.ParentTests.Post_AdminAddParentInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0100738" startTime="2022-08-11T21:31:10.3024543+02:00" endTime="2022-08-11T21:31:10.3024545+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="65736765-d879-4ff6-b280-7dd39ee431f1">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fa376587-aaae-4881-8bde-4c123a69d07c" testId="08a1e5eb-5436-6219-cb71-ab089ce85324" testName="back_end_tests.RegistrationTests.GetParentRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0157969" startTime="2022-08-11T21:31:08.5990691+02:00" endTime="2022-08-11T21:31:08.5990693+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa376587-aaae-4881-8bde-4c123a69d07c">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Required document does not exist","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4ca168e0-89f7-487b-bf6f-f3c3a909914e" testId="001b8580-8316-efe5-770f-8fc45c9203db" testName="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_ParentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0063726" startTime="2022-08-11T21:31:09.1480932+02:00" endTime="2022-08-11T21:31:09.1480933+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ca168e0-89f7-487b-bf6f-f3c3a909914e">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Parent not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aebb06a8-1421-4c89-bda1-0e61922d1447" testId="8378690c-d1ea-6837-791c-da7ebd8d12d2" testName="back_end_tests.AdminTests.GetAllParentsValid" computerName="john-hpprobook450g7" duration="00:00:28.3683880" startTime="2022-08-11T21:30:47.7339183+02:00" endTime="2022-08-11T21:30:47.7339555+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aebb06a8-1421-4c89-bda1-0e61922d1447" />
+    <UnitTestResult executionId="a75bbad1-3a58-4114-ad3c-2631a3deb083" testId="3624ae05-f833-3ee9-f2ae-0e6929d93520" testName="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileValid" computerName="john-hpprobook450g7" duration="00:00:00.1854786" startTime="2022-08-11T21:31:09.0124039+02:00" endTime="2022-08-11T21:31:09.0124040+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a75bbad1-3a58-4114-ad3c-2631a3deb083">
+      <Output>
+        <StdOut>StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Location: http://localhost/api/Registration/parents/files/upload
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"","data":{"message":"success"}}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ed7bd465-341f-4e4b-9aef-6f9f6b85d8de" testId="4d39fd03-9e9e-4a9d-4ede-e3fec4c66811" testName="back_end_tests.StudentTests.Post_AddStudentInvalid_ParentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0820208" startTime="2022-08-11T21:30:52.6416369+02:00" endTime="2022-08-11T21:30:52.6416373+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed7bd465-341f-4e4b-9aef-6f9f6b85d8de">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9d4fd4e6-ab31-44c1-879b-6f4aa2086807" testId="a61a5920-79e8-5e90-f110-fe6e37a8da4f" testName="back_end_tests.S3Tests.Post_GetPresignedGetUrlValid" computerName="john-hpprobook450g7" duration="00:00:00.0114838" startTime="2022-08-11T21:30:47.7700075+02:00" endTime="2022-08-11T21:30:47.7700076+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9d4fd4e6-ab31-44c1-879b-6f4aa2086807">
+      <Output>
+        <StdOut>StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  WWW-Authenticate: Bearer
+}</StdOut>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at back_end_tests.S3Tests.Post_GetPresignedGetUrlValid() in /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs:line 37
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="20be6303-2c86-44ba-bebf-3d989d0fe2ec" testId="dcdfa214-c73f-2c4f-7750-9f0bb4e20aad" testName="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_FileAlreadyExists" computerName="john-hpprobook450g7" duration="00:00:00.0035337" startTime="2022-08-11T21:31:08.6385808+02:00" endTime="2022-08-11T21:31:08.6385809+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="20be6303-2c86-44ba-bebf-3d989d0fe2ec">
+      <Output>
+        <StdOut>StatusCode: 409, ReasonPhrase: 'Conflict', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"File already exists","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="898c3c11-793a-4615-9863-f44342bb3cb0" testId="9a315382-a958-7b3f-1379-2b45949976a3" testName="back_end_tests.AuthTests.Post_ValidLogin_ReturnsOkWithToken" computerName="john-hpprobook450g7" duration="00:00:00.2306362" startTime="2022-08-11T21:30:52.7824970+02:00" endTime="2022-08-11T21:30:52.7824973+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="898c3c11-793a-4615-9863-f44342bb3cb0">
+      <Output>
+        <StdOut>{"errorMessage":"","data":{"userId":1,"roleId":1,"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIxIiwicm9sZUlkIjoiMSIsImV4cCI6MTY2MDI0NjM3MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDA4In0.GsHm1nS60wpEe0pqGQ76RYJ1A0voxdfJ4KPMLc4wGCA","refreshToken":"PG3L6yj03924rLhq2miCSBG/AMJVstdAEyFNpUR6J7c=","isApproved":1}}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88963b36-35b6-4367-97a3-f6ad30fe0641" testId="843291e9-160a-a4be-e957-5ec40d43152a" testName="back_end_tests.AuthTests.Post_TokenRefreshInvalid_BadRequest_EmptyOrNullValues" computerName="john-hpprobook450g7" duration="00:00:00.0171472" startTime="2022-08-11T21:30:49.1647618+02:00" endTime="2022-08-11T21:30:49.1647619+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88963b36-35b6-4367-97a3-f6ad30fe0641">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6ecae77c-166a-4cf9-b230-b82f97a119a0" testId="a4806fda-8275-f9a3-6015-7a775479ff8e" testName="back_end_tests.ParentTests.Post_AdminAddParentValid" computerName="john-hpprobook450g7" duration="00:00:00.4054865" startTime="2022-08-11T21:31:10.1023337+02:00" endTime="2022-08-11T21:31:10.1023339+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ecae77c-166a-4cf9-b230-b82f97a119a0">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33fd56fc-4ded-4939-9720-3955b3a430d6" testId="5f7beab7-d54d-6af1-3adc-1755cf2ba366" testName="back_end_tests.RegistrationTests.Get_RequestStudentRegistrationApprovalValid" computerName="john-hpprobook450g7" duration="00:00:00.0266270" startTime="2022-08-11T21:31:09.0476410+02:00" endTime="2022-08-11T21:31:09.0476411+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33fd56fc-4ded-4939-9720-3955b3a430d6">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e877aff2-84dd-4afe-a81e-dd1bd72290e9" testId="783e832c-7186-2c8c-2a38-a23e3c0fb6a0" testName="back_end_tests.AuthTests.Post_TokenRefreshInvalid_WrongRefreshToken" computerName="john-hpprobook450g7" duration="00:00:00.0047727" startTime="2022-08-11T21:30:49.5126605+02:00" endTime="2022-08-11T21:30:49.5126607+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e877aff2-84dd-4afe-a81e-dd1bd72290e9">
+      <Output>
+        <StdOut>StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b95134f-24ae-41bc-8484-acbc93681e3a" testId="fb213a75-57f9-91dc-3efc-e5590c50cc17" testName="back_end_tests.StudentTests.Post_AddStudentInvalid_NotAnAdminOrParentToken" computerName="john-hpprobook450g7" duration="00:00:00.0052391" startTime="2022-08-11T21:30:55.2548627+02:00" endTime="2022-08-11T21:30:55.2548629+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b95134f-24ae-41bc-8484-acbc93681e3a">
+      <Output>
+        <StdOut>StatusCode: 403, ReasonPhrase: 'Forbidden', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7a32497a-5424-488a-a43e-b77b07a11cc2" testId="ac9b4b11-fd40-761e-6c1e-6e62c4272793" testName="back_end_tests.AuthTests.Get_ValidUserAccountConfirmation" computerName="john-hpprobook450g7" duration="00:00:00.2292748" startTime="2022-08-11T21:30:49.3940914+02:00" endTime="2022-08-11T21:30:49.3940916+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a32497a-5424-488a-a43e-b77b07a11cc2" />
+    <UnitTestResult executionId="dcc60aa3-26da-4f60-960a-ab387446e666" testId="543227a4-de71-a019-e5bd-53beaeed527d" testName="back_end_tests.ParentTests.Post_EditParentProfileValid" computerName="john-hpprobook450g7" duration="00:00:00.1896120" startTime="2022-08-11T21:31:10.2921316+02:00" endTime="2022-08-11T21:31:10.2921317+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dcc60aa3-26da-4f60-960a-ab387446e666">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="51bc4252-173b-4d50-9dbc-33c29e2250dd" testId="5ac8120a-8579-46ed-6761-91584f2f40bc" testName="back_end_tests.StudentTests.Post_EditStudentInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0244183" startTime="2022-08-11T21:30:55.2495015+02:00" endTime="2022-08-11T21:30:55.2495018+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51bc4252-173b-4d50-9dbc-33c29e2250dd">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Bad Request","status":400,"traceId":"00-8c5dae7724b20cfdfedceb7ebd027a76-1c2e583023dab162-00"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="16025399-072a-4854-9385-bdad2488d800" testId="1dc146e9-4a7f-bce4-d5dc-b20bebfe93eb" testName="back_end_tests.ParentTests.Post_AdminAddParentInvalid_NotAnAdminToken" computerName="john-hpprobook450g7" duration="00:00:00.0088041" startTime="2022-08-11T21:31:10.3115154+02:00" endTime="2022-08-11T21:31:10.3115156+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16025399-072a-4854-9385-bdad2488d800">
+      <Output>
+        <StdOut>StatusCode: 403, ReasonPhrase: 'Forbidden', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="154cb501-e179-4a49-9978-4ca55b687290" testId="f744bf30-10bf-7b94-40cd-229c90ffcd06" testName="back_end_tests.RegistrationTests.GetRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0092262" startTime="2022-08-11T21:31:08.6252382+02:00" endTime="2022-08-11T21:31:08.6252382+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="154cb501-e179-4a49-9978-4ca55b687290">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Required document does not exist","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a921616d-eabf-436d-9650-c83ee0943dde" testId="e1d82dba-dd0c-220c-c0ea-0070c4aee079" testName="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_RequiredDocumentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0170204" startTime="2022-08-11T21:31:08.6159248+02:00" endTime="2022-08-11T21:31:08.6159248+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a921616d-eabf-436d-9650-c83ee0943dde">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Required document not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8fcb1163-6a14-4761-b8b2-ff7094e43444" testId="cd80692c-f8bc-9dfc-166f-4cd009bec0f4" testName="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0023905" startTime="2022-08-11T21:31:09.1505744+02:00" endTime="2022-08-11T21:31:09.1505744+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fcb1163-6a14-4761-b8b2-ff7094e43444">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Bad Request","status":400,"traceId":"00-d414c3d30f37c74d8942ce8bc1b583fa-bee4d0d89cf0b831-00"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ade1e67-03e8-4660-a7a1-93fe649829e3" testId="1a33e904-96fb-ac9b-bc2a-5a9f47ebe1a8" testName="back_end_tests.AuthTests.Get_InvalidUserAccountConfirmation_UserDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0064231" startTime="2022-08-11T21:30:49.4934598+02:00" endTime="2022-08-11T21:30:49.4934599+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ade1e67-03e8-4660-a7a1-93fe649829e3" />
+    <UnitTestResult executionId="b0cf2f92-e901-493c-adb6-94f30e1a45d0" testId="9e5a3a45-21b8-e85d-d868-6d5d4c42c560" testName="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileValid" computerName="john-hpprobook450g7" duration="00:00:00.1378677" startTime="2022-08-11T21:31:08.8059153+02:00" endTime="2022-08-11T21:31:08.8059154+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0cf2f92-e901-493c-adb6-94f30e1a45d0">
+      <Output>
+        <StdOut>StatusCode: 201, ReasonPhrase: 'Created', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Location: http://localhost/api/Registration/students/files/upload
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"","data":{"message":"success"}}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5fd8104b-16d7-4a3a-bbf7-9f834d77fd5a" testId="ae0db80c-8296-de01-f237-21fb82009842" testName="back_end_tests.AuthTests.Post_TokenRefreshInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0105786" startTime="2022-08-11T21:30:52.7932770+02:00" endTime="2022-08-11T21:30:52.7932773+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5fd8104b-16d7-4a3a-bbf7-9f834d77fd5a">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd218e83-b2ca-44f5-aa83-abdd304dd3bd" testId="5d0443b9-7577-8915-1f6a-9f0e05b9853f" testName="back_end_tests.AuthTests.Post_TokenRefreshInvalid_UserNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0743267" startTime="2022-08-11T21:30:49.4818170+02:00" endTime="2022-08-11T21:30:49.4818172+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd218e83-b2ca-44f5-aa83-abdd304dd3bd">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a26bb95d-ecb1-4514-bef9-4f0119d8393b" testId="ae7fbc98-e835-e665-aa01-574d669f4012" testName="back_end_tests.StudentTests.Post_EditStudentInvalid_StudentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0571152" startTime="2022-08-11T21:30:55.3121093+02:00" endTime="2022-08-11T21:30:55.3121108+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a26bb95d-ecb1-4514-bef9-4f0119d8393b">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"Student not found","data":""}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2c6272d9-a172-4f84-9288-d224d627cada" testId="744212c7-9f89-6694-68b8-35d6315ddb29" testName="back_end_tests.AuthTests.Post_InvalidUsernameLogin_ReturnsNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0131952" startTime="2022-08-11T21:30:49.4073794+02:00" endTime="2022-08-11T21:30:49.4073795+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c6272d9-a172-4f84-9288-d224d627cada" />
+    <UnitTestResult executionId="47d69295-cc92-41bc-a689-110082fdd302" testId="1b2347e3-0c31-5e95-9864-014b0dad7640" testName="back_end_tests.ParentTests.GetParentProfileInvalid_ParentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0051333" startTime="2022-08-11T21:31:10.3392415+02:00" endTime="2022-08-11T21:31:10.3392416+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47d69295-cc92-41bc-a689-110082fdd302" />
+    <UnitTestResult executionId="96c68f22-b34c-4f97-8322-fdcfa2a0eb52" testId="46605cd0-7725-8772-4e54-f64ced9df82d" testName="back_end_tests.RegistrationTests.GetRequiredParentUploadedDocumentsInvalid_ParentDoesNotExist" computerName="john-hpprobook450g7" duration="00:00:00.0122677" startTime="2022-08-11T21:31:08.8182715+02:00" endTime="2022-08-11T21:31:08.8182716+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96c68f22-b34c-4f97-8322-fdcfa2a0eb52">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a625c32-4ce3-4964-9718-45cbc6cd9ed1" testId="cde7a306-138f-be68-cf03-7e5f4b68327d" testName="back_end_tests.AuthTests.Post_TokenRefreshValid" computerName="john-hpprobook450g7" duration="00:00:00.1965096" startTime="2022-08-11T21:30:52.9989189+02:00" endTime="2022-08-11T21:30:52.9989194+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a625c32-4ce3-4964-9718-45cbc6cd9ed1">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7d8e6de1-a005-4a4d-97a3-7f70271bb5cb" testId="57bbf545-c8bd-7f2a-5d59-968357158cd5" testName="back_end_tests.RegistrationTests.GetRequiredUploadedDocumentsValid" computerName="john-hpprobook450g7" duration="00:00:22.5575759" startTime="2022-08-11T21:31:08.5633640+02:00" endTime="2022-08-11T21:31:08.5633640+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d8e6de1-a005-4a4d-97a3-7f70271bb5cb">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}
+{"errorMessage":"","data":[{"fileName":"idgaf","filePath":"some-file-path-1"}]}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a13d4fd7-4c53-440c-8c98-ed7648f4c480" testId="479d832e-1b07-ef0f-c6aa-1c82da9f398f" testName="back_end_tests.ParentTests.Post_EditParentProfileInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0153314" startTime="2022-08-11T21:31:09.6892091+02:00" endTime="2022-08-11T21:31:09.6892091+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a13d4fd7-4c53-440c-8c98-ed7648f4c480">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}
+{"type":"https://tools.ietf.org/html/rfc7231#section-6.5.1","title":"Bad Request","status":400,"traceId":"00-b9421288a0b724ef09c49e23b4ffeaea-96d5ee86dda18b4d-00"}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9df13949-18df-4182-86e4-fbf4c1c92e89" testId="11dd3f43-153e-2274-0d95-b5356d5405fa" testName="back_end_tests.StudentTests.Post_AddStudentInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0143116" startTime="2022-08-11T21:30:52.9363203+02:00" endTime="2022-08-11T21:30:52.9363208+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9df13949-18df-4182-86e4-fbf4c1c92e89">
+      <Output>
+        <StdOut>StatusCode: 400, ReasonPhrase: 'Bad Request', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/problem+json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a39d1086-ef76-4bd1-8d4c-1a5db907f8e0" testId="8796abf9-265c-13f0-5bc1-375b6d496e14" testName="back_end_tests.AdminTests.Post_RejectParentRegistrationValid" computerName="john-hpprobook450g7" duration="00:00:01.4098157" startTime="2022-08-11T21:30:49.1457299+02:00" endTime="2022-08-11T21:30:49.1457300+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a39d1086-ef76-4bd1-8d4c-1a5db907f8e0">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b1aaf263-0064-410e-bb10-fe103c4a5a77" testId="92420e30-6cd4-f120-deee-20bc93b45732" testName="back_end_tests.S3Tests.Post_GetPresignedPutUrlValid" computerName="john-hpprobook450g7" duration="00:00:00.0017496" startTime="2022-08-11T21:30:47.7715400+02:00" endTime="2022-08-11T21:30:47.7715401+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1aaf263-0064-410e-bb10-fe103c4a5a77">
+      <Output>
+        <StdOut>StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  WWW-Authenticate: Bearer
+}</StdOut>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at back_end_tests.S3Tests.Post_GetPresignedPutUrlValid() in /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs:line 70
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bf7689b2-f2be-4f2d-adff-335a1c098bb0" testId="7a58c821-eff7-d573-4759-aebf4367a3ba" testName="back_end_tests.AdminTests.GetAllParentsInvalid_NotAnAdminToken" computerName="john-hpprobook450g7" duration="00:00:00.0079691" startTime="2022-08-11T21:30:49.1533103+02:00" endTime="2022-08-11T21:30:49.1533104+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bf7689b2-f2be-4f2d-adff-335a1c098bb0" />
+    <UnitTestResult executionId="4d90b542-8f34-4d64-94c8-106dc13fd0b3" testId="eaf2864d-bb17-d20f-ffbb-b6e641199746" testName="back_end_tests.S3Tests.Post_GetPresignedGetUrlInvalid_BadRequest" computerName="john-hpprobook450g7" duration="00:00:00.0055629" startTime="2022-08-11T21:30:47.7705268+02:00" endTime="2022-08-11T21:30:47.7705269+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d90b542-8f34-4d64-94c8-106dc13fd0b3">
+      <Output>
+        <StdOut>StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  WWW-Authenticate: Bearer
+}</StdOut>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at back_end_tests.S3Tests.Post_GetPresignedGetUrlInvalid_BadRequest() in /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs:line 54
+--- End of stack trace from previous location ---</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0fb6e5eb-df4a-4db5-a540-6d445614ccad" testId="0b4917f6-0480-1300-242a-b1e1bc111a53" testName="back_end_tests.ParentTests.Post_AdminAddParentInvalid_ParentAlreadyExists" computerName="john-hpprobook450g7" duration="00:00:00.0223350" startTime="2022-08-11T21:31:10.3339912+02:00" endTime="2022-08-11T21:31:10.3339913+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fb6e5eb-df4a-4db5-a540-6d445614ccad">
+      <Output>
+        <StdOut>StatusCode: 409, ReasonPhrase: 'Conflict', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="623e44a7-926f-4dfc-853e-1a1c23527dd1" testId="fb3ee0ac-2352-1b03-079f-077d9103726f" testName="back_end_tests.AdminTests.Post_ApproveParentRegistrationValid" computerName="john-hpprobook450g7" duration="00:00:00.4019986" startTime="2022-08-11T21:30:49.5555141+02:00" endTime="2022-08-11T21:30:49.5555144+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="623e44a7-926f-4dfc-853e-1a1c23527dd1">
+      <Output>
+        <StdOut>StatusCode: 200, ReasonPhrase: 'OK', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bcb69334-a419-4868-9c93-20759c9456d4" testId="eed01b2e-5f9c-4099-fd20-9a71e9831972" testName="back_end_tests.RegistrationTests.Get_RequestStudentRegistrationApprovalInalid_StudentNotFound" computerName="john-hpprobook450g7" duration="00:00:00.0083850" startTime="2022-08-11T21:31:09.0208776+02:00" endTime="2022-08-11T21:31:09.0208777+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bcb69334-a419-4868-9c93-20759c9456d4">
+      <Output>
+        <StdOut>StatusCode: 404, ReasonPhrase: 'Not Found', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+{
+  Content-Type: application/json; charset=utf-8
+}</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="06ba9899-87a1-4a36-a95c-61c583a853af" testId="86e6d9b4-d113-1306-a76e-8ae95017fb65" testName="back_end_tests.AdminTests.GetParentRegistrationRequestsValid" computerName="john-hpprobook450g7" duration="00:00:00.0375621" startTime="2022-08-11T21:30:49.5933048+02:00" endTime="2022-08-11T21:30:49.5933051+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06ba9899-87a1-4a36-a95c-61c583a853af" />
+    <UnitTestResult executionId="c2446e69-ce1c-4ca8-aabf-fa75a000558a" testId="8dede57c-b08a-192c-6565-eda18efd90a3" testName="back_end_tests.StudentTests.GetStudentInvalid_StudentNotFound" computerName="john-hpprobook450g7" duration="00:00:02.2119196" startTime="2022-08-11T21:30:55.2246975+02:00" endTime="2022-08-11T21:30:55.2246984+02:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2446e69-ce1c-4ca8-aabf-fa75a000558a" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="back_end_tests.AuthTests.Get_ValidUserAccountConfirmation" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="ac9b4b11-fd40-761e-6c1e-6e62c4272793">
+      <Execution id="7a32497a-5424-488a-a43e-b77b07a11cc2" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Get_ValidUserAccountConfirmation" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.GetParentProfileValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="f2932bdd-4394-b2c3-bbee-919a5ed2c6aa">
+      <Execution id="571e08c1-1554-420d-ba44-db517985728d" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="GetParentProfileValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_EditStudentInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="5ac8120a-8579-46ed-6761-91584f2f40bc">
+      <Execution id="51bc4252-173b-4d50-9dbc-33c29e2250dd" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_EditStudentInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_InvalidUsernameLogin_ReturnsNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="744212c7-9f89-6694-68b8-35d6315ddb29">
+      <Execution id="2c6272d9-a172-4f84-9288-d224d627cada" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_InvalidUsernameLogin_ReturnsNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_AdminAddParentInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="753b4fa1-e67a-4efa-59d9-633dd25ea951">
+      <Execution id="65736765-d879-4ff6-b280-7dd39ee431f1" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_AdminAddParentInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRequiredStudentUploadedDocumentsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="000bd4fd-c825-c8ac-1d58-2007f8885e94">
+      <Execution id="63e89772-8261-4b87-80e7-3e841f01026f" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRequiredStudentUploadedDocumentsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="1fa400c0-0ee3-3936-ed9f-e72c4e1a0a45">
+      <Execution id="14a74d6e-6140-47dd-989c-724e2248f61f" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddParentRegistrationFileInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Get_RequestStudentRegistrationApprovalValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="5f7beab7-d54d-6af1-3adc-1755cf2ba366">
+      <Execution id="33fd56fc-4ded-4939-9720-3955b3a430d6" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Get_RequestStudentRegistrationApprovalValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRequiredParentUploadedDocumentsInvalid_ParentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="46605cd0-7725-8772-4e54-f64ced9df82d">
+      <Execution id="96c68f22-b34c-4f97-8322-fdcfa2a0eb52" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRequiredParentUploadedDocumentsInvalid_ParentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_TokenRefreshInvalid_WrongRefreshToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="783e832c-7186-2c8c-2a38-a23e3c0fb6a0">
+      <Execution id="e877aff2-84dd-4afe-a81e-dd1bd72290e9" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_TokenRefreshInvalid_WrongRefreshToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_AddStudentInvalid_ParentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="4d39fd03-9e9e-4a9d-4ede-e3fec4c66811">
+      <Execution id="ed7bd465-341f-4e4b-9aef-6f9f6b85d8de" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_AddStudentInvalid_ParentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_TokenRefreshInvalid_BadRequest_EmptyOrNullValues" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="843291e9-160a-a4be-e957-5ec40d43152a">
+      <Execution id="88963b36-35b6-4367-97a3-f6ad30fe0641" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_TokenRefreshInvalid_BadRequest_EmptyOrNullValues" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Get_RequestStudentRegistrationApprovalInalid_StudentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="eed01b2e-5f9c-4099-fd20-9a71e9831972">
+      <Execution id="bcb69334-a419-4868-9c93-20759c9456d4" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Get_RequestStudentRegistrationApprovalInalid_StudentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.S3Tests.Post_GetPresignedGetUrlValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="a61a5920-79e8-5e90-f110-fe6e37a8da4f">
+      <Execution id="9d4fd4e6-ab31-44c1-879b-6f4aa2086807" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.S3Tests" name="Post_GetPresignedGetUrlValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_TokenRefreshInvalid_UserNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="5d0443b9-7577-8915-1f6a-9f0e05b9853f">
+      <Execution id="dd218e83-b2ca-44f5-aa83-abdd304dd3bd" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_TokenRefreshInvalid_UserNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_InvalidUserRegistration_UserExists_ReturnsConflict" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="431f9e60-47fd-9ef3-213a-7e51e348cd67">
+      <Execution id="01eacaf4-a151-4c33-a04a-84a89bcb9fcb" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_InvalidUserRegistration_UserExists_ReturnsConflict" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="3624ae05-f833-3ee9-f2ae-0e6929d93520">
+      <Execution id="a75bbad1-3a58-4114-ad3c-2631a3deb083" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddParentRegistrationFileValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_AdminAddParentInvalid_ParentAlreadyExists" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="0b4917f6-0480-1300-242a-b1e1bc111a53">
+      <Execution id="0fb6e5eb-df4a-4db5-a540-6d445614ccad" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_AdminAddParentInvalid_ParentAlreadyExists" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="cd80692c-f8bc-9dfc-166f-4cd009bec0f4">
+      <Execution id="8fcb1163-6a14-4761-b8b2-ff7094e43444" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddStudentRegistrationFileInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.GetParentRegistrationRequestsInvalid_NotAnAdminToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="324992b0-2d28-1ecc-7059-527314fcab33">
+      <Execution id="65fbe3a0-5420-4e90-8f79-4bb0e54b0466" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="GetParentRegistrationRequestsInvalid_NotAnAdminToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRequiredStudentUploadedDocumentsInvalid_StudentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="1bb0d043-1610-9466-97e8-ed0905837f53">
+      <Execution id="fcad8e52-dbd1-43bf-aa62-a926f0a7d715" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRequiredStudentUploadedDocumentsInvalid_StudentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_EditStudentValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9dbd392f-77be-0e79-4377-b77fb5a4c593">
+      <Execution id="d32bdd37-a9d0-4f4d-9bc1-e6403f5da484" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_EditStudentValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetParentRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="08a1e5eb-5436-6219-cb71-ab089ce85324">
+      <Execution id="fa376587-aaae-4881-8bde-4c123a69d07c" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetParentRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.GetStudentValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="6e46a588-5f1e-d1b1-dbb3-d46ecbb8abc9">
+      <Execution id="27668c47-9b6d-4f1e-97d4-c29a2ecafbc2" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="GetStudentValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_FileAlreadyExists" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="dcdfa214-c73f-2c4f-7750-9f0bb4e20aad">
+      <Execution id="20be6303-2c86-44ba-bebf-3d989d0fe2ec" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddStudentRegistrationFileInvalid_FileAlreadyExists" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.GetAllParentsInvalid_NotAnAdminToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="7a58c821-eff7-d573-4759-aebf4367a3ba">
+      <Execution id="bf7689b2-f2be-4f2d-adff-335a1c098bb0" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="GetAllParentsInvalid_NotAnAdminToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_FileAlreadyExists" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="506abd08-fbf5-cd2f-98db-0ecbeb9eb1c9">
+      <Execution id="c5c56e55-277a-47eb-9b70-8f86a125bf99" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddParentRegistrationFileInvalid_FileAlreadyExists" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_TokenRefreshValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="cde7a306-138f-be68-cf03-7e5f4b68327d">
+      <Execution id="2a625c32-4ce3-4964-9718-45cbc6cd9ed1" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_TokenRefreshValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_AdminAddParentValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="a4806fda-8275-f9a3-6015-7a775479ff8e">
+      <Execution id="6ecae77c-166a-4cf9-b230-b82f97a119a0" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_AdminAddParentValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_AddStudentInvalid_StudentAlreadyExists" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="932a4267-2407-cf59-5aa2-d621cd88c6a4">
+      <Execution id="c570ef0d-6f2e-4c4b-a440-6c4c725a5360" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_AddStudentInvalid_StudentAlreadyExists" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_InvalidUserRegistration_BadRequest_ReturnsBadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="63b7c8e3-885f-5ef4-8049-5ab44d11f00f">
+      <Execution id="08d5d7ea-9bd0-408d-82c2-4c18f4f349e3" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_InvalidUserRegistration_BadRequest_ReturnsBadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.GetParentRegistrationRequestsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="86e6d9b4-d113-1306-a76e-8ae95017fb65">
+      <Execution id="06ba9899-87a1-4a36-a95c-61c583a853af" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="GetParentRegistrationRequestsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.GetParentProfileInvalid_ParentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="1b2347e3-0c31-5e95-9864-014b0dad7640">
+      <Execution id="47d69295-cc92-41bc-a689-110082fdd302" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="GetParentProfileInvalid_ParentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_RequiredDocumentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9bfe4691-5eb2-d731-00da-48518e7e341b">
+      <Execution id="90330fa6-e680-48cc-b3c3-c6c6be57cd62" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddParentRegistrationFileInvalid_RequiredDocumentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.GetStudentInvalid_StudentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="8dede57c-b08a-192c-6565-eda18efd90a3">
+      <Execution id="c2446e69-ce1c-4ca8-aabf-fa75a000558a" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="GetStudentInvalid_StudentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9e5a3a45-21b8-e85d-d868-6d5d4c42c560">
+      <Execution id="b0cf2f92-e901-493c-adb6-94f30e1a45d0" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddStudentRegistrationFileValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_EditParentProfileInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="479d832e-1b07-ef0f-c6aa-1c82da9f398f">
+      <Execution id="a13d4fd7-4c53-440c-8c98-ed7648f4c480" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_EditParentProfileInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Get_InvalidUserAccountDeregistration_UserDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="aeeec48c-f9b0-ca68-8f2f-1493d3f3f438">
+      <Execution id="2ca54c26-d905-4f5c-8d6b-dfdc96f45a0a" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Get_InvalidUserAccountDeregistration_UserDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.S3Tests.Post_GetPresignedGetUrlInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="eaf2864d-bb17-d20f-ffbb-b6e641199746">
+      <Execution id="4d90b542-8f34-4d64-94c8-106dc13fd0b3" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.S3Tests" name="Post_GetPresignedGetUrlInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="f744bf30-10bf-7b94-40cd-229c90ffcd06">
+      <Execution id="154cb501-e179-4a49-9978-4ca55b687290" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRequiredUploadedDocumentsInvalid_RequiredDocumentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Get_InvalidUserAccountConfirmation_UserDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="1a33e904-96fb-ac9b-bc2a-5a9f47ebe1a8">
+      <Execution id="5ade1e67-03e8-4660-a7a1-93fe649829e3" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Get_InvalidUserAccountConfirmation_UserDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_ValidLogin_ReturnsOkWithToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9a315382-a958-7b3f-1379-2b45949976a3">
+      <Execution id="898c3c11-793a-4615-9863-f44342bb3cb0" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_ValidLogin_ReturnsOkWithToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.S3Tests.Post_GetPresignedPutUrlInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="aebdcebf-8e7a-c63e-aa5f-c311c398d305">
+      <Execution id="ffd8397d-c397-482b-bf8c-e9152d26dcd7" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.S3Tests" name="Post_GetPresignedPutUrlInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetStudentRequiredRegistrationDocumentsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="e9484059-c80e-ecc7-cb39-bf0f153cc97d">
+      <Execution id="5716d671-b1c3-4118-8111-84a0c751cc4d" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetStudentRequiredRegistrationDocumentsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.S3Tests.Post_GetPresignedPutUrlValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="92420e30-6cd4-f120-deee-20bc93b45732">
+      <Execution id="b1aaf263-0064-410e-bb10-fe103c4a5a77" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.S3Tests" name="Post_GetPresignedPutUrlValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_RequiredDocumentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="e1d82dba-dd0c-220c-c0ea-0070c4aee079">
+      <Execution id="a921616d-eabf-436d-9650-c83ee0943dde" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddStudentRegistrationFileInvalid_RequiredDocumentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_TokenRefreshInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="ae0db80c-8296-de01-f237-21fb82009842">
+      <Execution id="5fd8104b-16d7-4a3a-bbf7-9f834d77fd5a" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_TokenRefreshInvalid_BadRequest" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRegistrationStatusForStudentInvalid_StudentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="20994a2e-965c-d9f3-b03c-da7082c27311">
+      <Execution id="8e443884-8c5a-464e-9d8f-b0620722c54a" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRegistrationStatusForStudentInvalid_StudentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetParentRequiredRegistrationDocumentsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="fc79c695-7fa8-a1d8-2916-755b1222d1cb">
+      <Execution id="fde5b738-ee5f-46fd-b042-0013aa6ccaab" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetParentRequiredRegistrationDocumentsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_AdminAddParentInvalid_NotAnAdminToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="1dc146e9-4a7f-bce4-d5dc-b20bebfe93eb">
+      <Execution id="16025399-072a-4854-9385-bdad2488d800" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_AdminAddParentInvalid_NotAnAdminToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Get_ValidUserAccountDeregistration" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9334fecf-6862-093c-1e87-009d89aaadd0">
+      <Execution id="53962d0e-b0a8-4a80-a3f6-782ad52df7ff" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Get_ValidUserAccountDeregistration" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.GetAllParentsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="8378690c-d1ea-6837-791c-da7ebd8d12d2">
+      <Execution id="aebb06a8-1421-4c89-bda1-0e61922d1447" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="GetAllParentsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.Post_RejectParentRegistrationValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="8796abf9-265c-13f0-5bc1-375b6d496e14">
+      <Execution id="a39d1086-ef76-4bd1-8d4c-1a5db907f8e0" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="Post_RejectParentRegistrationValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AdminTests.Post_ApproveParentRegistrationValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="fb3ee0ac-2352-1b03-079f-077d9103726f">
+      <Execution id="623e44a7-926f-4dfc-853e-1a1c23527dd1" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AdminTests" name="Post_ApproveParentRegistrationValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_EditStudentInvalid_StudentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="ae7fbc98-e835-e665-aa01-574d669f4012">
+      <Execution id="a26bb95d-ecb1-4514-bef9-4f0119d8393b" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_EditStudentInvalid_StudentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_ValidUserRegistration_ReturnsCreated" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="9d0f4897-a9a1-ce72-9e4f-e9eb6229148c">
+      <Execution id="011b5dd2-73d7-4f9d-bb0f-2cd61133515f" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_ValidUserRegistration_ReturnsCreated" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.AuthTests.Post_InvalidPasswordLogin_ReturnsUnauthorized" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="c4bfa831-3eb6-7d40-c645-b26cbbd6968f">
+      <Execution id="4fc63e4a-f4d9-4e89-a5e1-08f288969bde" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.AuthTests" name="Post_InvalidPasswordLogin_ReturnsUnauthorized" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRegistrationStatusForStudentValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="0f66eab3-aa83-5a2a-b7bd-fa8706c53b65">
+      <Execution id="3cb0cc6f-2503-4093-b9b1-9b856472def3" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRegistrationStatusForStudentValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddStudentRegistrationFileInvalid_StudentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="7de18d24-fbde-6f9f-8b72-85162c41f713">
+      <Execution id="79c1fd42-f729-4867-be54-38b4032ce893" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddStudentRegistrationFileInvalid_StudentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_AddStudentInvalid_NotAnAdminOrParentToken" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="fb213a75-57f9-91dc-3efc-e5590c50cc17">
+      <Execution id="7b95134f-24ae-41bc-8484-acbc93681e3a" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_AddStudentInvalid_NotAnAdminOrParentToken" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_AddStudentValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="a0299adf-f508-f5d5-3e50-a8b75312f721">
+      <Execution id="b8ecc375-76d2-4f22-ab11-97b08d1855b9" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_AddStudentValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.GetRequiredUploadedDocumentsValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="57bbf545-c8bd-7f2a-5d59-968357158cd5">
+      <Execution id="7d8e6de1-a005-4a4d-97a3-7f70271bb5cb" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="GetRequiredUploadedDocumentsValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_EditParentProfileInvalid_ParentNotFound" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="7661b606-2c29-ab3d-9754-ce16e168c0d8">
+      <Execution id="7b82630a-84b7-430b-a1c0-c074d6aca454" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_EditParentProfileInvalid_ParentNotFound" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.ParentTests.Post_EditParentProfileValid" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="543227a4-de71-a019-e5bd-53beaeed527d">
+      <Execution id="dcc60aa3-26da-4f60-960a-ab387446e666" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.ParentTests" name="Post_EditParentProfileValid" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.RegistrationTests.Post_AddParentRegistrationFileInvalid_ParentDoesNotExist" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="001b8580-8316-efe5-770f-8fc45c9203db">
+      <Execution id="4ca168e0-89f7-487b-bf6f-f3c3a909914e" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.RegistrationTests" name="Post_AddParentRegistrationFileInvalid_ParentDoesNotExist" />
+    </UnitTest>
+    <UnitTest name="back_end_tests.StudentTests.Post_AddStudentInvalid_BadRequest" storage="/home/john/web-projects/sca-its/back-end-tests/bin/debug/net6.0/back-end-tests.dll" id="11dd3f43-153e-2274-0d95-b5356d5405fa">
+      <Execution id="9df13949-18df-4182-86e4-fbf4c1c92e89" />
+      <TestMethod codeBase="/home/john/Web-projects/SCA-ITS/back-end-tests/bin/Debug/net6.0/back-end-tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="back_end_tests.StudentTests" name="Post_AddStudentInvalid_BadRequest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="a0299adf-f508-f5d5-3e50-a8b75312f721" executionId="b8ecc375-76d2-4f22-ab11-97b08d1855b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aebdcebf-8e7a-c63e-aa5f-c311c398d305" executionId="ffd8397d-c397-482b-bf8c-e9152d26dcd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9334fecf-6862-093c-1e87-009d89aaadd0" executionId="53962d0e-b0a8-4a80-a3f6-782ad52df7ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="431f9e60-47fd-9ef3-213a-7e51e348cd67" executionId="01eacaf4-a151-4c33-a04a-84a89bcb9fcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20994a2e-965c-d9f3-b03c-da7082c27311" executionId="8e443884-8c5a-464e-9d8f-b0620722c54a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="506abd08-fbf5-cd2f-98db-0ecbeb9eb1c9" executionId="c5c56e55-277a-47eb-9b70-8f86a125bf99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7661b606-2c29-ab3d-9754-ce16e168c0d8" executionId="7b82630a-84b7-430b-a1c0-c074d6aca454" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9dbd392f-77be-0e79-4377-b77fb5a4c593" executionId="d32bdd37-a9d0-4f4d-9bc1-e6403f5da484" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1fa400c0-0ee3-3936-ed9f-e72c4e1a0a45" executionId="14a74d6e-6140-47dd-989c-724e2248f61f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="932a4267-2407-cf59-5aa2-d621cd88c6a4" executionId="c570ef0d-6f2e-4c4b-a440-6c4c725a5360" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7de18d24-fbde-6f9f-8b72-85162c41f713" executionId="79c1fd42-f729-4867-be54-38b4032ce893" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63b7c8e3-885f-5ef4-8049-5ab44d11f00f" executionId="08d5d7ea-9bd0-408d-82c2-4c18f4f349e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f2932bdd-4394-b2c3-bbee-919a5ed2c6aa" executionId="571e08c1-1554-420d-ba44-db517985728d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc79c695-7fa8-a1d8-2916-755b1222d1cb" executionId="fde5b738-ee5f-46fd-b042-0013aa6ccaab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d0f4897-a9a1-ce72-9e4f-e9eb6229148c" executionId="011b5dd2-73d7-4f9d-bb0f-2cd61133515f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4bfa831-3eb6-7d40-c645-b26cbbd6968f" executionId="4fc63e4a-f4d9-4e89-a5e1-08f288969bde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6e46a588-5f1e-d1b1-dbb3-d46ecbb8abc9" executionId="27668c47-9b6d-4f1e-97d4-c29a2ecafbc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9484059-c80e-ecc7-cb39-bf0f153cc97d" executionId="5716d671-b1c3-4118-8111-84a0c751cc4d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aeeec48c-f9b0-ca68-8f2f-1493d3f3f438" executionId="2ca54c26-d905-4f5c-8d6b-dfdc96f45a0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f66eab3-aa83-5a2a-b7bd-fa8706c53b65" executionId="3cb0cc6f-2503-4093-b9b1-9b856472def3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="324992b0-2d28-1ecc-7059-527314fcab33" executionId="65fbe3a0-5420-4e90-8f79-4bb0e54b0466" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bfe4691-5eb2-d731-00da-48518e7e341b" executionId="90330fa6-e680-48cc-b3c3-c6c6be57cd62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="000bd4fd-c825-c8ac-1d58-2007f8885e94" executionId="63e89772-8261-4b87-80e7-3e841f01026f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1bb0d043-1610-9466-97e8-ed0905837f53" executionId="fcad8e52-dbd1-43bf-aa62-a926f0a7d715" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="753b4fa1-e67a-4efa-59d9-633dd25ea951" executionId="65736765-d879-4ff6-b280-7dd39ee431f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="08a1e5eb-5436-6219-cb71-ab089ce85324" executionId="fa376587-aaae-4881-8bde-4c123a69d07c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="001b8580-8316-efe5-770f-8fc45c9203db" executionId="4ca168e0-89f7-487b-bf6f-f3c3a909914e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8378690c-d1ea-6837-791c-da7ebd8d12d2" executionId="aebb06a8-1421-4c89-bda1-0e61922d1447" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3624ae05-f833-3ee9-f2ae-0e6929d93520" executionId="a75bbad1-3a58-4114-ad3c-2631a3deb083" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4d39fd03-9e9e-4a9d-4ede-e3fec4c66811" executionId="ed7bd465-341f-4e4b-9aef-6f9f6b85d8de" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a61a5920-79e8-5e90-f110-fe6e37a8da4f" executionId="9d4fd4e6-ab31-44c1-879b-6f4aa2086807" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="dcdfa214-c73f-2c4f-7750-9f0bb4e20aad" executionId="20be6303-2c86-44ba-bebf-3d989d0fe2ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a315382-a958-7b3f-1379-2b45949976a3" executionId="898c3c11-793a-4615-9863-f44342bb3cb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="843291e9-160a-a4be-e957-5ec40d43152a" executionId="88963b36-35b6-4367-97a3-f6ad30fe0641" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a4806fda-8275-f9a3-6015-7a775479ff8e" executionId="6ecae77c-166a-4cf9-b230-b82f97a119a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5f7beab7-d54d-6af1-3adc-1755cf2ba366" executionId="33fd56fc-4ded-4939-9720-3955b3a430d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="783e832c-7186-2c8c-2a38-a23e3c0fb6a0" executionId="e877aff2-84dd-4afe-a81e-dd1bd72290e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb213a75-57f9-91dc-3efc-e5590c50cc17" executionId="7b95134f-24ae-41bc-8484-acbc93681e3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac9b4b11-fd40-761e-6c1e-6e62c4272793" executionId="7a32497a-5424-488a-a43e-b77b07a11cc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="543227a4-de71-a019-e5bd-53beaeed527d" executionId="dcc60aa3-26da-4f60-960a-ab387446e666" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ac8120a-8579-46ed-6761-91584f2f40bc" executionId="51bc4252-173b-4d50-9dbc-33c29e2250dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dc146e9-4a7f-bce4-d5dc-b20bebfe93eb" executionId="16025399-072a-4854-9385-bdad2488d800" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f744bf30-10bf-7b94-40cd-229c90ffcd06" executionId="154cb501-e179-4a49-9978-4ca55b687290" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1d82dba-dd0c-220c-c0ea-0070c4aee079" executionId="a921616d-eabf-436d-9650-c83ee0943dde" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd80692c-f8bc-9dfc-166f-4cd009bec0f4" executionId="8fcb1163-6a14-4761-b8b2-ff7094e43444" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a33e904-96fb-ac9b-bc2a-5a9f47ebe1a8" executionId="5ade1e67-03e8-4660-a7a1-93fe649829e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e5a3a45-21b8-e85d-d868-6d5d4c42c560" executionId="b0cf2f92-e901-493c-adb6-94f30e1a45d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae0db80c-8296-de01-f237-21fb82009842" executionId="5fd8104b-16d7-4a3a-bbf7-9f834d77fd5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5d0443b9-7577-8915-1f6a-9f0e05b9853f" executionId="dd218e83-b2ca-44f5-aa83-abdd304dd3bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae7fbc98-e835-e665-aa01-574d669f4012" executionId="a26bb95d-ecb1-4514-bef9-4f0119d8393b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="744212c7-9f89-6694-68b8-35d6315ddb29" executionId="2c6272d9-a172-4f84-9288-d224d627cada" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b2347e3-0c31-5e95-9864-014b0dad7640" executionId="47d69295-cc92-41bc-a689-110082fdd302" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46605cd0-7725-8772-4e54-f64ced9df82d" executionId="96c68f22-b34c-4f97-8322-fdcfa2a0eb52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cde7a306-138f-be68-cf03-7e5f4b68327d" executionId="2a625c32-4ce3-4964-9718-45cbc6cd9ed1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57bbf545-c8bd-7f2a-5d59-968357158cd5" executionId="7d8e6de1-a005-4a4d-97a3-7f70271bb5cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="479d832e-1b07-ef0f-c6aa-1c82da9f398f" executionId="a13d4fd7-4c53-440c-8c98-ed7648f4c480" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="11dd3f43-153e-2274-0d95-b5356d5405fa" executionId="9df13949-18df-4182-86e4-fbf4c1c92e89" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8796abf9-265c-13f0-5bc1-375b6d496e14" executionId="a39d1086-ef76-4bd1-8d4c-1a5db907f8e0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="92420e30-6cd4-f120-deee-20bc93b45732" executionId="b1aaf263-0064-410e-bb10-fe103c4a5a77" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a58c821-eff7-d573-4759-aebf4367a3ba" executionId="bf7689b2-f2be-4f2d-adff-335a1c098bb0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eaf2864d-bb17-d20f-ffbb-b6e641199746" executionId="4d90b542-8f34-4d64-94c8-106dc13fd0b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b4917f6-0480-1300-242a-b1e1bc111a53" executionId="0fb6e5eb-df4a-4db5-a540-6d445614ccad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fb3ee0ac-2352-1b03-079f-077d9103726f" executionId="623e44a7-926f-4dfc-853e-1a1c23527dd1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eed01b2e-5f9c-4099-fd20-9a71e9831972" executionId="bcb69334-a419-4868-9c93-20759c9456d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86e6d9b4-d113-1306-a76e-8ae95017fb65" executionId="06ba9899-87a1-4a36-a95c-61c583a853af" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8dede57c-b08a-192c-6565-eda18efd90a3" executionId="c2446e69-ce1c-4ca8-aabf-fa75a000558a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="66" executed="66" passed="61" failed="5" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.6)
+[xUnit.net 00:00:00.92]   Discovering: back-end-tests
+[xUnit.net 00:00:00.96]   Discovered:  back-end-tests
+[xUnit.net 00:00:00.96]   Starting:    back-end-tests
+[xUnit.net 00:00:29.74]       Assert.True() Failure
+[xUnit.net 00:00:29.74]       Expected: True
+[xUnit.net 00:00:29.75]       Actual:   False
+[xUnit.net 00:00:29.75]       Stack Trace:
+[xUnit.net 00:00:29.75]         /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs(87,0): at back_end_tests.S3Tests.Post_GetPresignedPutUrlInvalid_BadRequest()
+[xUnit.net 00:00:29.75]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:29.75]       Output:
+[xUnit.net 00:00:29.75]         StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+[xUnit.net 00:00:29.75]         {
+[xUnit.net 00:00:29.75]           WWW-Authenticate: Bearer
+[xUnit.net 00:00:29.75]         }
+[xUnit.net 00:00:29.75]         
+[xUnit.net 00:00:29.75]       Assert.True() Failure
+[xUnit.net 00:00:29.75]       Expected: True
+[xUnit.net 00:00:29.75]       Actual:   False
+[xUnit.net 00:00:29.75]       Stack Trace:
+[xUnit.net 00:00:29.75]         /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs(37,0): at back_end_tests.S3Tests.Post_GetPresignedGetUrlValid()
+[xUnit.net 00:00:29.75]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:29.75]       Output:
+[xUnit.net 00:00:29.75]         StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+[xUnit.net 00:00:29.75]         {
+[xUnit.net 00:00:29.75]           WWW-Authenticate: Bearer
+[xUnit.net 00:00:29.75]         }
+[xUnit.net 00:00:29.75]         
+[xUnit.net 00:00:29.75]       Assert.True() Failure
+[xUnit.net 00:00:29.75]       Expected: True
+[xUnit.net 00:00:29.75]       Actual:   False
+[xUnit.net 00:00:29.75]       Stack Trace:
+[xUnit.net 00:00:29.75]         /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs(54,0): at back_end_tests.S3Tests.Post_GetPresignedGetUrlInvalid_BadRequest()
+[xUnit.net 00:00:29.75]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:29.75]       Output:
+[xUnit.net 00:00:29.75]         StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+[xUnit.net 00:00:29.75]         {
+[xUnit.net 00:00:29.75]           WWW-Authenticate: Bearer
+[xUnit.net 00:00:29.75]         }
+[xUnit.net 00:00:29.75]         
+[xUnit.net 00:00:29.75]       Assert.True() Failure
+[xUnit.net 00:00:29.75]       Expected: True
+[xUnit.net 00:00:29.75]       Actual:   False
+[xUnit.net 00:00:29.75]       Stack Trace:
+[xUnit.net 00:00:29.75]         /home/john/Web-projects/SCA-ITS/back-end-tests/S3Tests.cs(70,0): at back_end_tests.S3Tests.Post_GetPresignedPutUrlValid()
+[xUnit.net 00:00:29.75]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:29.75]       Output:
+[xUnit.net 00:00:29.75]         StatusCode: 401, ReasonPhrase: 'Unauthorized', Version: 1.1, Content: System.Net.Http.StreamContent, Headers:
+[xUnit.net 00:00:29.75]         {
+[xUnit.net 00:00:29.75]           WWW-Authenticate: Bearer
+[xUnit.net 00:00:29.75]         }
+[xUnit.net 00:00:29.75]         
+[xUnit.net 00:00:31.47]       Assert.True() Failure
+[xUnit.net 00:00:31.47]       Expected: True
+[xUnit.net 00:00:31.47]       Actual:   False
+[xUnit.net 00:00:31.47]       Stack Trace:
+[xUnit.net 00:00:31.47]         /home/john/Web-projects/SCA-ITS/back-end-tests/AuthTests.cs(79,0): at back_end_tests.AuthTests.Post_InvalidPasswordLogin_ReturnsUnauthorized()
+[xUnit.net 00:00:31.47]         --- End of stack trace from previous location ---
+[xUnit.net 00:00:54.57]   Finished:    back-end-tests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="john-hpprobook450g7" outcome="Error" timestamp="2022-08-11T21:30:47.7583165+02:00">
+        <Text>[xUnit.net 00:00:29.74]     back_end_tests.S3Tests.Post_GetPresignedPutUrlInvalid_BadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="john-hpprobook450g7" outcome="Error" timestamp="2022-08-11T21:30:47.7713483+02:00">
+        <Text>[xUnit.net 00:00:29.75]     back_end_tests.S3Tests.Post_GetPresignedGetUrlValid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="john-hpprobook450g7" outcome="Error" timestamp="2022-08-11T21:30:47.7715102+02:00">
+        <Text>[xUnit.net 00:00:29.75]     back_end_tests.S3Tests.Post_GetPresignedGetUrlInvalid_BadRequest [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="john-hpprobook450g7" outcome="Error" timestamp="2022-08-11T21:30:47.7723666+02:00">
+        <Text>[xUnit.net 00:00:29.75]     back_end_tests.S3Tests.Post_GetPresignedPutUrlValid [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="john-hpprobook450g7" outcome="Error" timestamp="2022-08-11T21:30:49.4872575+02:00">
+        <Text>[xUnit.net 00:00:31.47]     back_end_tests.AuthTests.Post_InvalidPasswordLogin_ReturnsUnauthorized [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

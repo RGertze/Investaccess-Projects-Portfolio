@@ -1,0 +1,19 @@
+.banking-details-container {
+    background-color: #efefef;
+
+}
+
+.banking-details-title {
+    text-align: center;
+}
+
+.banking-details-table {}
+
+.banking-details-left {
+    font-weight: bold;
+    text-align: start;
+    padding-left: 10%;
+    width: 40%;
+}
+
+.banking-details-right {}

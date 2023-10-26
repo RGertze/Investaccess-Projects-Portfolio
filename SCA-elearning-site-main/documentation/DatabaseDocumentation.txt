@@ -1,0 +1,72 @@
+Database used;
+-   MySql
+
+Tables:
+-   Course
+-   Course_Material
+-   Course_Assigment
+-   Student
+-   Student_Courses
+-   Student_Assignment
+-   Staff
+-   Position
+
+Object definitions:
+*   Course:
+----    Course_ID       -- PK
+----    Staff_ID
+----    Course_Name
+----    Course_Desc
+----    Course_Grade
+*   Course_Material:
+----    Course_Material_ID  -- PK
+----    Course_ID
+----    Course_Material_Path
+----    Course_Material_Name
+*   Course_Assigment:
+----    Course_Assigment_ID -- PK
+----    Course_ID
+----    Course_Assigment_Path
+----    Course_Assigment_Name
+*   Student:
+----    Student_ID      -- PK
+----    Student_First_Name
+----    Student_Surname_Name
+----    Student_Age
+----    Student_Grade
+----    Student_Guardian_Cell
+----    Student_Guardian_Email
+*   Student_Course:
+----    Student_ID      -- CPK
+----    Course_ID       -- CPK
+----    Student_Course_Enrollment_Date
+----    Student_Course_Mark
+*   Student_Assignment:
+----    Student_Assignment_ID   -- PK
+----    Student_ID
+----    Course_Assigment_ID
+----    Student_Assignment_Path
+----    Student_Assignment_Name
+----    Student_Assignment_Mark
+*   Staff:
+----    Staff_ID        -- PK
+----    Position_ID
+----    Staff_Name
+----    Staff_Age
+----    Staff_Cell
+----    Staff_Email
+*   Position:
+----    Position_ID     -- PK
+----    Position_Name
+----    Position_Desc
+----    Position_Access_Level
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+#course-enrolled-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 80%;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (max-width: 960px){
+    #course-enrolled-container{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}

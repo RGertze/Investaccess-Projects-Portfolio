@@ -1,0 +1,160 @@
+#course-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    min-height: 40px;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#course-card-info-container{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 1fr;
+    align-items: center;
+
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#course-card-info-container:hover{
+    cursor: pointer;
+}
+
+#course-card-info-container:hover #course-card-info-name{
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+
+#course-card-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 40%;
+}
+
+.course-card-buttons{
+    width: 50%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+#course-card-buttons-delete{
+    grid-column: 1;
+
+    background-color: #BB0000;
+    color: white;
+    border-color: white;
+}
+
+#course-card-buttons-update{
+    grid-column: 2;
+
+    background-color: #344045;
+    color: white;
+    border-color: white;
+}
+
+#course-card-buttons-delete:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#course-card-buttons-update:hover{
+    cursor: pointer;
+    background-color: #566267;
+}
+
+#add-course-staff-button:hover{
+    cursor: pointer;
+    color: #AAA;
+}
+
+#course-other-staff-container{
+    width: 60%;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+
+#course-other-staff-header{
+    width: 50%;
+}
+
+#course-other-staff-container p{
+    text-align: center;
+}
+
+#add-course-staff-container{
+    z-index: 1001;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #121E23;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+#add-course-staff-container select{
+    margin-bottom: 20px;
+}
+#add-course-staff-container div{
+    width: 200px;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 960px){
+    #course-card-container{
+        width: 97%;
+        font-size: small;
+    }
+
+    #course-card-buttons-container{
+        width: 60%;
+        height: fit-content;
+        margin-bottom: 5px;
+    }
+
+    .course-card-buttons{
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    #add-course-staff-container{
+        width: 90%;
+    }
+}
+
+
+
+

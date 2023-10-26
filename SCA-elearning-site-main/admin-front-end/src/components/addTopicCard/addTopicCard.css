@@ -1,0 +1,44 @@
+.add-card-overlay{
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    font-family: sans-serif;
+}
+
+
+#course-topics-add-container{
+    z-index: 1001;
+
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #121E23;
+    border: 1px solid #777;
+    border-radius: 10px;
+}
+#course-topics-add-container h3{
+    text-align: center;
+    font-family: sans-serif;
+}
+#course-topics-add-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

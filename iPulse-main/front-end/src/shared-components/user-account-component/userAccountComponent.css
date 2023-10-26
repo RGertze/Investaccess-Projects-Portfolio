@@ -1,0 +1,13 @@
+.user-account-component-container {
+    width: 100%;
+}
+
+.user-account-form-btn {
+    width: 40%;
+}
+
+@media(max-width: 800px) {
+    .user-account-form-btn {
+        width: 90%;
+    }
+}

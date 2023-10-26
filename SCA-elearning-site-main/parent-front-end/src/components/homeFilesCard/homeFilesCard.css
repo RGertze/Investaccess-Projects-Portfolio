@@ -1,0 +1,51 @@
+#home-files-container{
+    max-height: 300px;
+    width: 100%;
+
+    font-family: sans-serif;
+
+    background-color: #EEEEEE;
+    border-radius: 5px;
+}
+
+#home-files-container h3{
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+#home-files-container h2{
+    font-size: 20px;
+}
+
+#home-files-container ul{
+    width: 70%;
+    font-size: 20px;
+    justify-content: center;
+}
+
+#home-files-container p{
+    color: #3333FF;
+    padding-left: 20px;
+    text-decoration: underline;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+#home-files-container p:hover{
+    cursor: pointer;
+    color: #000077;
+}
+
+@media (max-width: 960px){
+    #home-files-container{
+        min-height: 150px;
+        max-height: 150px;
+        width: 85%;
+        margin-bottom: 10px;
+        overflow-y: auto;
+    }
+}
+
+

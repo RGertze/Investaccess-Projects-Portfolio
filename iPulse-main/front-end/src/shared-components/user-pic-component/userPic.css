@@ -1,0 +1,11 @@
+.user-pic-container img {
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 1000px) {
+    .user-pic-container img {
+        width: 45px;
+        height: 45px;
+    }
+}

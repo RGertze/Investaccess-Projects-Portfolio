@@ -1,0 +1,36 @@
+#assignment-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    width: 90%;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    text-align: center;
+    color: white;
+
+    border-bottom: 1px solid white;
+}
+
+#assignment-card-mark-update{
+    grid-column: 4;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+@media (max-width: 960px){
+    #assignment-card-container{
+        width: 95%;
+    }
+    #assignment-card-mark-update{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,80 @@
+.my-patients-page-container {
+    width: 100%;
+    min-height: 300px;
+
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+.my-patients-title {
+    width: 80%;
+    height: 60px;
+    background-color: #82B7DC;
+    color: #113344;
+    margin-bottom: 30px;
+}
+
+.patient-requests-container {
+    width: 80%;
+    display: grid;
+    grid-template-rows: 60px 40px 1fr;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.patient-requests-container h4 {
+    width: 100%;
+    background-color: #82B7DC;
+    color: #113344;
+}
+
+.patient-requests-container p {
+    padding: 10px;
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+    color: #113344;
+
+}
+
+.patient-requests {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+.patient-requests-container .patient-view-user-details {
+    width: 300px;
+    min-height: 280px;
+    background-color: #fcfcfc;
+    border: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.patient-requests-container .patient-view-user-details h6 {
+    margin-top: 5px;
+}
+
+.patient-requests-container .patient-view-user-details p {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.patient-requests-container .patient-view-user-details img {
+    width: 200px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .my-patients-page-container {
+        padding-top: 15px;
+    }
+
+    .my-patients-page-container h3 {
+        margin-bottom: 15px;
+    }
+}

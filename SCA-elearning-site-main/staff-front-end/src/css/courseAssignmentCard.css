@@ -1,0 +1,145 @@
+#course-assignment-card-container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 90%;
+    min-height: 5vh;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    overflow: hidden;
+
+    background-color: white;
+
+    border: 1px solid #111111;
+    border-radius: 20px;
+}
+
+#course-assignment-card-title{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    width: 100%;
+
+    text-align: center;
+
+    background-color: #C0552B;
+
+}
+
+#course-assignment-card-download{
+    grid-column: 1;
+
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+
+    font: large sans-serif;
+    text-decoration: underline;
+}
+
+#course-assignment-card-download:hover{
+    cursor: pointer;
+    color: lightblue;
+}
+
+#course-assignment-card-delete{
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    align-self: center;
+
+    width: 30%;
+    height: 40%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    color: red;
+    background-color: white;
+
+    border: 2px solid red;
+    border-radius: 20px;
+}
+
+#course-assignment-card-delete:hover{
+    cursor: pointer;
+    color: maroon;
+    border-color: maroon;
+}
+
+#course-assignment-due-date{
+    text-decoration: underline;
+    font: large italic;
+}
+
+#course-assignment-card-submit{
+    display: flex;
+    flex-direction: row;
+
+    width: 60%;
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin-right: 20px;
+
+    font: small-caption;
+}
+
+#course-assignment-card-uploaded{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 70%;
+    height: fit-content;
+
+    border: 1px solid maroon;
+}
+
+#course-assignment-card-uploaded-title{
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+
+    background-color: #C55555;
+}
+
+#course-assignment-card-uploaded-title:hover{
+    color: white;
+    cursor: pointer;
+}
+
+#course-assignment-card-uploaded-path{
+    color: darkblue;
+    text-decoration: underline;
+}
+
+
+@media (max-width: 960px){
+    #course-assignment-card-delete{
+        width: 50%;
+    }
+}
+
+

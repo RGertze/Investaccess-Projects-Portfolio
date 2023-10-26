@@ -1,0 +1,35 @@
+.statement-files-table{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 40px;
+    align-items: center;
+    width: 90%;
+}
+.statement-files-table p{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#finance-details{
+    width: 60%;
+    margin-bottom: 20px;
+}
+#finance-details div{
+    height: 30px;
+}
+#finance-details div h4{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 960px){
+    .statement-files-table h3{
+        font-size: 17px;
+    }
+    #finance-details{
+        width: 95%;
+    }
+}
+
+

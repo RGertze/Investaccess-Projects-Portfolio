@@ -1,0 +1,28 @@
+.pending-appointment-list-container {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pending-appointment-list-item {
+    width: 47%;
+}
+
+.pending-appointment-card {
+    width: 45%;
+    margin-bottom: 10px;
+}
+
+.pending-appointment-card-table {
+    width: 60%;
+}
+
+.pending-appointment-subtitle {
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+@media(max-width: 800px) {
+    .pending-appointment-list-item {
+        width: 98%;
+    }
+}

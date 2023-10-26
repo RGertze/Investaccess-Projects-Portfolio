@@ -1,0 +1,24 @@
+#terms-conditions-title{
+    text-decoration: underline;
+}
+
+.terms-conditions{
+    color: #3333FF;
+}
+.terms-conditions:hover{
+    cursor: pointer;
+    color: #5555FF;
+}
+
+#terms-conditions-checkbox{
+    width: 50%;
+    justify-content: space-evenly;
+}
+#terms-conditions-checkbox h4{
+    width: 80%;
+    text-align: center;
+}
+
+#add-file-card-container button{
+    margin-bottom: 20px;
+}

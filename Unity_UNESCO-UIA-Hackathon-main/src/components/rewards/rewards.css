@@ -1,0 +1,23 @@
+.rewards {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 15px;
+    background-color: #CBD0C3;
+}
+
+.reward-progress {
+    width: fit-content;
+    background-color: #E5E7E1;
+}
+
+.reward-goals {
+    margin-top: 40px;
+}
+
+.reward-goal {
+    width: 95%;
+    margin-top: 5px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    min-height: 50px;
+}

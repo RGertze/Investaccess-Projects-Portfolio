@@ -1,0 +1,112 @@
+.patient-view-page-container {
+    min-height: 70vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* background-color: rebeccapurple; */
+}
+
+.patient-view-card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    width: 80%;
+    min-height: 500px;
+    background-color: #fafafa;
+    border: 2px solid #f0f0f0;
+}
+
+.patient-view-user-details {
+    width: 100%;
+    min-height: 500px;
+    max-height: 500px;
+    border-right: 1px solid #ccc;
+}
+
+.patient-view-user-details img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.patient-view-user-details div {
+    width: 100%;
+}
+
+.patient-view-profile-details {
+    width: 100%;
+    min-height: 500px;
+    background-color: white;
+}
+
+.patient-view-profile-details h3 {
+    margin-top: 10px;
+}
+
+.profile-access-denied {
+    width: 100%;
+    height: 300px;
+}
+
+.profile-access-denied div {
+    width: 25%;
+}
+
+.profile-access-denied h6 {
+    padding-top: 10px;
+}
+
+.profile-details-table {
+    width: 90%;
+    overflow: hidden;
+}
+
+.profile-details-table .col1 {
+    width: 30%;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.patient-view-tabs {
+    width: 100%;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:800px) {
+
+    .patient-view-page-container {
+        padding-top: 10px;
+    }
+
+    .patient-view-card {
+        display: flex;
+        width: 95%;
+        height: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .patient-view-user-details {
+        width: 100%;
+        min-height: 200px;
+        padding-top: 10px;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .patient-view-user-details div {
+        width: 98%;
+    }
+
+    .patient-view-profile-details {
+        width: 100%;
+        height: 90%;
+    }
+
+    .profile-access-denied {
+        margin-bottom: 20px;
+    }
+
+    .profile-access-denied div {
+        width: 50%;
+    }
+}

@@ -1,0 +1,146 @@
+#staff-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid white;
+}
+
+#staff-card-table-record{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+#staff-card-table-record:hover{
+    cursor: pointer;
+}
+
+#staff-card-table-record:hover #staff-card-table-name{
+    color: #999999;
+    text-decoration: underline;
+}
+
+#staff-card-buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 65%;
+    height: fit-content;
+    min-height: 10vh;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    background-color: #232F34;
+
+    border: 1px solid #555555;
+    border-radius: 10px;
+}
+
+#staff-card-remove-student-button{
+    grid-column: 1;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 50%;
+
+    text-align: center;
+
+    color: white;
+    background-color: #BB0000;
+
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#staff-card-update-student-button{
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+    height: 50%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    text-align: center;
+
+    color: white;
+    background-color: #344045;
+
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
+#staff-card-remove-student-button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#staff-card-update-student-button:hover{
+    cursor: pointer;
+    background-color: #566267;
+}
+
+#staff-card-courses-title{
+    width: fit-content;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    color: white;
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+@media (max-width: 960px){
+    #staff-card-container{
+        width: 97%;
+        font-size: small;
+    }
+    #staff-card-buttons-container{
+        width: 80%;
+    }
+    #staff-card-update-student-button{
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #staff-card-remove-student-button{
+        width: fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+
+
+

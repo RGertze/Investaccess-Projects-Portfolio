@@ -1,0 +1,45 @@
+/* 
+    #F1F1F1,
+    #202020, 
+    #7E909A, 
+    #1C4E80, 
+    #A5D8DD, 
+    #EA6A47, 
+    #0091D5 
+*/
+
+.mark-sheet {
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.mark-sheet-header {
+    padding-top: 5px;
+    padding-left: 30px;
+    background-color: #1C4E80;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+}
+
+.mark-sheet-total {
+    background-color: #F1F1F1 !important;
+    color: black !important;
+    font-weight: 100;
+}
+
+.mark-sheet-final {
+    background-color: #F1F1F1 !important;
+    color: black !important;
+}
+
+.mark-sheet-table thead {
+    position: sticky;
+    top: 0;
+}
+
+
+.mark-sheet-table th,
+.mark-sheet-table td {
+    text-align: center;
+}

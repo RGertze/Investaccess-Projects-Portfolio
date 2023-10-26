@@ -1,0 +1,125 @@
+#student-report-card-container{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    height: fit-content;
+    min-height: 5vh;
+
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #232F34;
+
+    border: 1px solid #555555;
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+#student-report-card-title{
+    width: 100%;
+    height: fit-content;
+
+    text-align: center;
+
+    color: white;
+
+    font-family: sans-serif;
+}
+
+#student-report-card-title:hover{
+    cursor: pointer;
+    color: #9999FF;
+}
+
+#student-report-card-add-container{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    height: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+
+    padding-bottom: 15px;
+
+    color: white;
+    background-color: #121E23;
+
+    border-radius: 10px;
+}
+
+#student-report-card-add-container h3{
+    font-family: sans-serif;
+}
+
+.student-report-card-add-input, #student-report-card-generate-button{
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#student-report-card-generate-button{
+    width: 50%;
+    height: 5vh;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 2px solid white;
+    border-radius: 10px;
+}
+#student-report-card-generate-button:hover{
+    cursor: pointer;
+    color: #CCCCFF;
+    background-color: #232F34;
+}
+
+#report-card-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 70%;
+    height: min-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    text-align: center;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: large;
+
+    border-bottom: 2px solid #666666;
+}
+
+@media (max-width: 960px){
+    #student-report-card-container{
+        width: 95%;
+    }
+    #student-report-card-add-container{
+        width: 80%;
+    }
+    #report-card-header{
+        width: 97%;
+        text-align: center;
+        justify-content: center;
+    }
+    #report-card-header h4{
+        width: 100%;
+        text-align: center;
+    }
+}
+

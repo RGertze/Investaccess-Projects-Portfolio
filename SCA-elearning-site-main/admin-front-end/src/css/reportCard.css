@@ -1,0 +1,36 @@
+#report-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 70%;
+    height: min-content;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    text-align: center;
+
+    color: white;
+    font-family: monospace;
+    font-size: medium;
+
+    border-bottom: 1px solid #999999;
+}
+
+#report-card-name{
+    color: #8888FF;
+}
+
+#report-card-name:hover{
+    cursor: pointer;
+    color: #CCCCFF;
+    text-decoration: underline;
+}
+
+@media (max-width: 960px){
+    #report-card-container{
+        width: 97%;
+        align-items: center;
+    }
+}

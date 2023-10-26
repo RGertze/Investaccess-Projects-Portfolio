@@ -1,0 +1,66 @@
+#terms-conditions-container{
+    width: 60%;
+    height: fit-content;
+    max-height: 250px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #232F34;
+    overflow-y: auto;
+    font-family: sans-serif;
+    border: 1px solid #344045;
+    border-radius: 10px;
+}
+
+#terms-conditions-title{
+    width: 100%;
+    height: 50px;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#terms-conditions-title div{
+    height: 50px;
+}
+#terms-conditions-title div:hover{
+    cursor: pointer;
+    color: #AAA;
+}
+
+#terms-conditions-header{
+    border-bottom: 2px solid white;
+}
+#terms-conditions-header h3{
+    text-align: center;
+}
+
+.terms-conditions-table{
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    align-items: center;
+    width: 90%;
+}
+.terms-conditions-table p{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#parent-file-name{
+    color: #5555FF;
+    text-decoration: underline;
+}
+#parent-file-name:hover{
+    color: #2222FF;
+    cursor: pointer;
+}
+
+@media (max-width: 960px){
+    #terms-conditions-container{
+        width: 95%;
+    }
+    #terms-conditions-title div h2{
+        font-size: 18px;
+    }
+}
+
+

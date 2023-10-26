@@ -1,0 +1,24 @@
+#course-grade-card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    width: 90%;
+    min-height: 10vh;
+
+    overflow: hidden;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom: 5px;
+
+    text-align: center;
+
+    background-color: #EEEEFF;
+
+    border: 1px solid black;
+}
+#course-grade-card-toggle:hover{
+    cursor: pointer;
+    color: red;
+}

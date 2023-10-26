@@ -1,0 +1,31 @@
+#course-marks-card-container{
+    display: grid;
+
+    grid-template-columns: 40% 1fr 1fr;
+
+    align-items: center;
+
+    width: 80%;
+    height: 5%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid black;
+
+    font-size: medium;
+    font-family: sans-serif;
+}
+
+#course-marks-card-container h4{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+@media (max-width: 960px){
+    #course-marks-card-container{
+        width: 95%;
+    }
+}
+

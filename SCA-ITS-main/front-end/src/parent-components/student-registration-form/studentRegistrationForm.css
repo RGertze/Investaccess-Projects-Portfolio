@@ -1,0 +1,14 @@
+.student-registration-form-container {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    margin: 10px;
+}
+
+@media(max-width: 800px) {
+
+    .student-registration-form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}

@@ -1,0 +1,10 @@
+.filter-component-container {
+    width: fit-content;
+    padding: 10px;
+}
+
+.filter-component {
+    width: fit-content;
+    max-width: 150px;
+    margin-left: 20px;
+}

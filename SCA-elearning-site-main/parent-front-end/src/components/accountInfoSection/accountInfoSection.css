@@ -1,0 +1,48 @@
+#account-info-container{
+    width: 100%;
+    height: 100%;
+
+    background-color: white;
+
+    font-family: sans-serif;
+}
+
+#personal-info-title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#personal-info-title-container{
+    width: 300px;
+    justify-content: space-evenly;
+}
+
+#account-personal-info{
+    width: 80%;
+    height: fit-content;
+    margin-bottom: 30px;
+    border: 2px solid #CFCFCF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#account-personal-info p{
+    width: 90%;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.personal-info-name{
+    color: #333;
+    background-color: #EFEFEF;
+}
+.personal-info-name h3{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 960px){
+    #account-personal-info{
+        width: 97%;
+    }
+}

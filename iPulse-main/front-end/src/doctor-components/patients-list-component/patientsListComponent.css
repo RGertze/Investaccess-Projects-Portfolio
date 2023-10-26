@@ -1,0 +1,45 @@
+.patients-list-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    column-gap: 40px;
+}
+
+.patient-search-container {
+    height: 280px;
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+.patients-list {
+    height: 100%;
+    min-height: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media (max-width: 800px) {
+    .patients-list-container {
+        width: 100%;
+        padding-top: 15px;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .patient-search-container {
+        width: 90%;
+    }
+
+    .patients-list {
+        width: 100%;
+    }
+
+    .patients-list-container h3 {
+        margin-bottom: 15px;
+    }
+
+}

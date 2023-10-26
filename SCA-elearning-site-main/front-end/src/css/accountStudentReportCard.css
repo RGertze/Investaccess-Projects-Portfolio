@@ -1,0 +1,38 @@
+#account-student-report-card-container{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    width: 80%;
+    height: fit-content;
+
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-family: monospace;
+    font-size: large;
+
+    border-bottom: 1px solid #AAAAFF;
+}
+
+#account-student-report-name{
+    color: #0000FF;
+}
+
+#account-student-report-name:hover{
+    cursor: pointer;
+    color: #4444FF;
+    text-decoration: underline;
+}
+
+@media (max-width: 960px){
+    #account-student-report-card-container{
+        font-size: medium;
+    }
+}
+

@@ -1,0 +1,49 @@
+.all-doctors-container {
+    width: 100%;
+    padding: 30px;
+}
+
+.all-doctors-container h2 {
+    font-weight: bold;
+}
+
+.all-doctors-panels {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    column-gap: 40px;
+}
+
+.all-doctors-search {
+    min-height: 400px;
+    border: 1px solid #dddddd;
+    padding: 10px;
+}
+
+.all-doctors {
+    height: 100%;
+    min-height: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+@media(max-width:800px) {
+    .all-doctors-container {
+        padding: 10px;
+    }
+
+    .all-doctors-panels {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .all-doctors-search {
+        margin-bottom: 10px;
+    }
+
+    .all-doctors {}
+}
