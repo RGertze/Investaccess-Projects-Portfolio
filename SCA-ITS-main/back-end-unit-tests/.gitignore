@@ -1,5 +1,0 @@
-obj/
-bin/
-TestResults/*
-
-!TestResults/testResults.html

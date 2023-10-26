@@ -1,9 +1,0 @@
-.site-admin-users-container {
-    padding: 10px;
-}
-
-@media(max-width: 1000px) {
-    .site-admin-users-container {
-        padding: 3px;
-    }
-}

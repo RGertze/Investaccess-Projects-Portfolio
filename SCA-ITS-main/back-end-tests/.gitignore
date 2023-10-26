@@ -1,6 +1,0 @@
-obj/
-bin/
-
-TestResults/*
-
-!TestResults/testResults.trx
